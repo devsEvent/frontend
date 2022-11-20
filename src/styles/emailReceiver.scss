@@ -1,0 +1,192 @@
+@import "variables";
+@import "mediaQueries";
+
+.email-reciever {
+  @include center;
+  margin-right: -1rem;
+  height: 32rem;
+  width: calc(100% + 2rem);
+  color: $lightHeader;
+  box-shadow: $boxShadow;
+  background-color: $lighterBackground;
+  @include tablet {
+    padding: 3rem 0 7.5rem 0;
+    margin-right: -5vw;
+    width: 105vw;
+    height: fit-content;
+  }
+  h5 {
+    margin-bottom: clamp(0.75rem, 1vw + 0.5rem, 1rem);
+    font-size: clamp(1rem, 2vw + 1.1rem, 2.25rem);
+    font-weight: 800;
+  }
+  p {
+    text-align: center;
+    font-weight: 500;
+    font-size: clamp(0.9rem, 2.5vw, 1.25rem);
+    @include mobile {
+      width: 75vw;
+      line-height: 2.25rem !important;
+    }
+    &.first {
+      width: clamp(50%, 51%, 66%);
+      width: 66%;
+      line-height: 3rem;
+      @include tablet {
+        width: 80vw;
+      }
+    }
+    &.last {
+      margin-top: 0.75rem;
+      @include tablet {
+        width: 75vw;
+      }
+      @include mobile {
+        margin-top: 0;
+        width: 75vw;
+      }
+    }
+  }
+  &__form,
+  .form {
+    @include flex(center);
+    position: relative;
+    padding: 0 2rem 0 1rem;
+    margin-top: 3rem;
+    height: 5rem;
+    width: 46rem;
+    border-radius: 4rem;
+    background-color: $lightHeader;
+    @include tablet {
+      margin-top: 5vw;
+      padding-right: 1.5rem;
+      height: clamp(3rem, 12vw, 4rem);
+      width: 75vw;
+    }
+    &__icon {
+      width: 2.25rem;
+    }
+    &__input {
+      margin: 0 3rem 0 1rem;
+      position: relative;
+      width: 60%;
+      input {
+        width: 100%;
+        border: none;
+        outline: none;
+        font-size: 1.2rem;
+        color: $lighterBackground;
+        &::placeholder {
+          color: #656565;
+          font-size: 1.1rem;
+        }
+        @include tablet {
+          font-size: 0.9rem !important;
+          &::placeholder {
+            font-size: 0.9rem !important;
+          }
+        }
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        inset: 50% -1.5rem auto auto;
+        transform: translateY(-50%);
+        height: 125%;
+        width: 3px;
+        border-radius: 1rem;
+        background-color: #656565;
+      }
+      @include tablet {
+        margin: 0 0.5rem 0 1rem;
+        input {
+          font-size: 1rem;
+        }
+        &::before {
+          display: none;
+        }
+      }
+    }
+    &__button {
+      @include flex(center, space-between);
+      padding: 0 1.5rem;
+      height: 75%;
+      width: 32.5%;
+      border: none;
+      outline: none;
+      overflow: hidden;
+      border-radius: 3rem;
+      background-color: $orangeColor;
+      @include transition(all 1s ease-out);
+      span {
+        color: $lighterBackground;
+        font-size: 1.25rem;
+        font-weight: 600;
+        @include tablet {
+          font-size: 0.9rem;
+        }
+      }
+      img {
+        width: 2.5rem;
+        @include transition(all 1s ease-out);
+        transition-delay: 500ms;
+        @include tablet {
+          width: 2rem;
+        }
+      }
+      &.active {
+        padding-right: 2.75rem;
+        margin-right: 5%;
+        width: 25%;
+        @include tablet {
+          padding-right: 1.8rem;
+        }
+        img {
+          margin-left: -4rem;
+          width: 2.25rem;
+          opacity: 0;
+          @include transition(all 250ms ease-in-out);
+        }
+      }
+      &:hover img {
+        margin-left: -4rem;
+        width: 2.25rem;
+        opacity: 0;
+      }
+    }
+    @include tablet {
+      position: relative;
+      width: 100%;
+      .form__icon {
+        display: none;
+      }
+      .form__button {
+        position: absolute;
+        inset: 115% auto auto 50%;
+        transform: translateX(-50%);
+        margin: 0;
+        width: 100%;
+        height: 3.25rem;
+        border-radius: 3.5rem;
+        span {
+          transition: all 1000ms;
+        }
+        &.active {
+          @include tablet {
+            padding-right: 1.8rem;
+          }
+          span {
+            margin-right: 50%;
+            transform: translateX(50%);
+          }
+          img {
+            margin-left: -4rem;
+            opacity: 0;
+            width: 2.25rem;
+            transition-delay: 0;
+          }
+        }
+      }
+    }
+  }
+}

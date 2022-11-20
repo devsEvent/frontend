@@ -1,0 +1,34 @@
+@import "variables";
+@import "mediaQueries";
+
+.event {
+  padding: 10rem 1rem 0 1rem;
+  &__container {
+    margin: clamp(2.25rem, 2vw + 2rem, 4rem) auto 0 auto;
+    .header__container {
+      img {
+        margin-top: -0.5rem;
+        width: clamp(1.55rem, 4vw, 2.1rem);
+      }
+      h1 {
+        @include flex(center);
+        @include ThreeDotsOverflow;
+        column-gap: 0.5rem;
+        font-weight: 600;
+        font-size: clamp(1.05rem, 3.25vw, 1.45rem);
+        color: $lightHeader;
+        transform: translateY(-0.25rem);
+        height: 3.45rem;
+        width: 100%;
+        span.english::first-letter {
+          font-size: clamp(3rem, 3.25vw, 3.45rem);
+        }
+      }
+    }
+  }
+
+  .container__content {
+    @include flex(center, space-between);
+    margin: clamp(1.25rem, 2vw + 0.75rem, 3rem) 0 5rem 0;
+  }
+}

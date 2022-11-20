@@ -1,0 +1,262 @@
+@import "variables";
+@import "mediaQueries";
+
+.events,
+.home__events {
+  margin: 10rem auto 5rem auto;
+  @include mobile {
+    margin: 10rem auto 2rem auto;
+  }
+  .events__container {
+    @include flex(center, space-between, row, wrap);
+    margin: 2rem auto 0 auto;
+    width: 95%;
+    height: 28rem;
+    gap: 1rem 2rem;
+    overflow: hidden;
+
+    @media screen and (max-width: 896px) {
+      @include flex(center, center);
+    }
+
+    @include tablet {
+      gap: 0;
+    }
+    &__content,
+    .content {
+      width: 26rem;
+      height: 28rem;
+      box-shadow: $boxShadow;
+      background-color: $lighterBackground;
+      border-radius: 1.25rem 1.25rem 0.5rem 0.5rem;
+
+      @media screen and (max-width: 896px) {
+        width: 24rem !important;
+        &:nth-child(2),
+        &:nth-child(3) {
+          display: none;
+        }
+      }
+      @include tablet {
+        padding: 0.5rem 0 2rem 0;
+        height: fit-content;
+      }
+      @include mobile {
+        padding: 0.5rem 0 2rem 0;
+        height: fit-content;
+      }
+
+      &__header,
+      .header {
+        margin: 0.75rem auto 0 auto;
+        position: relative;
+        width: 95%;
+        height: 15rem;
+        @include transition(all 500ms ease-out);
+        &__space {
+          position: absolute;
+          top: 0;
+          width: 100%;
+          height: clamp(11.75rem, 5vw + 8rem, 12.25rem);
+          border-radius: 1rem 1rem 3rem 1rem;
+        }
+        &__logo {
+          position: absolute;
+          inset: clamp(10.15rem, 5vw + 6rem, 10.25rem) clamp(3.7rem, 5vw, 3.75rem) auto auto;
+          width: clamp(3.25rem, 5vw, 3.75rem);
+          height: clamp(3.25rem, 5vw, 3.75rem);
+          border-radius: 100%;
+          &::before {
+            content: "";
+            position: absolute;
+            inset: -15% -60% auto auto;
+            z-index: 1;
+            width: 215%;
+            height: 80%;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-image: url("../assets/white-hill.png");
+          }
+          img {
+            position: inherit;
+            height: 100%;
+            width: 100%;
+            z-index: 1;
+          }
+        }
+        &__timer {
+          @include flex(center);
+          position: absolute;
+          inset: 5% auto auto 5%;
+          height: 1.5rem;
+          width: fit-content;
+          padding: 0 0.5rem;
+          column-gap: 0.5rem;
+          border-radius: 0px 0.6rem 0.6rem 0.6rem;
+          background-color: $lighterBackground;
+          svg {
+            width: 1rem;
+            path {
+              fill: $lightHeader;
+            }
+          }
+          time {
+            margin-top: 0.1rem;
+            font-weight: 500;
+            font-size: clamp(0.7rem, 2.75vw, 0.8rem);
+          }
+        }
+        &:hover .header--hover {
+          opacity: 1;
+          backdrop-filter: blur(7px);
+          @include transition(all 500ms ease-out);
+        }
+        .header--hover,
+        .hover {
+          @include center;
+          @include transition(all 500ms ease-out);
+          position: absolute;
+          inset: -1rem auto auto -0.5rem;
+          height: 105%;
+          width: 105%;
+          z-index: 1;
+          opacity: 0;
+          border-radius: 1.25rem;
+          backdrop-filter: blur(0);
+          button {
+            @include flex(center, center);
+            position: relative;
+            border: none;
+            column-gap: 1rem;
+            backdrop-filter: blur(25px);
+            background: rgba(136, 136, 136, 0.4);
+            &.hover__location {
+              width: 10.5rem;
+              height: 2.25rem;
+              border-radius: 1rem;
+              a {
+                font-size: 0.85rem;
+                font-weight: 600;
+                color: $lighterBackground;
+              }
+              img {
+                width: 1.4rem;
+              }
+            }
+          }
+          &__rate,
+          .rate {
+            @include flex(center, space-between);
+            position: absolute;
+            inset: 1.5rem 5% auto 0;
+            width: 90%;
+            &__caption {
+              @include flex(center, center);
+              padding: 0.65rem;
+              height: 2.25rem;
+              column-gap: 0.65rem;
+              border-radius: 1.25rem;
+              color: $lighterBackground;
+              backdrop-filter: blur(25px);
+              background: rgba(161, 161, 161, 0.6);
+              svg {
+                width: 1.5rem;
+              }
+              span {
+                margin-top: 0.125rem;
+                line-height: 1rem;
+              }
+            }
+            &__like,
+            .like {
+              @include center;
+              padding: 0.5rem;
+              height: 2.5rem;
+              column-gap: 0.5rem;
+              border-radius: 1.25rem;
+              color: $lighterBackground;
+              backdrop-filter: blur(25px);
+              background: rgba(161, 161, 161, 0.25);
+              svg {
+                width: 1.5rem;
+                &.like--checked {
+                  fill: red !important;
+                  animation: big-click 0.5s;
+                  path {
+                    stroke: rgb(206, 0, 0);
+                  }
+                }
+                &.like--unchecked {
+                  fill: none !important;
+                  animation: big-unClick 0.5s;
+                  path {
+                    stroke: $lighterBackground;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      &__caption,
+      .caption {
+        @include flex();
+        margin-top: 1.25rem;
+        padding: 0 2.5%;
+        flex-wrap: wrap;
+        height: 7rem;
+        &__item,
+        .item {
+          @include flex(center);
+          height: 2.25rem;
+          column-gap: 0.5rem;
+          font-size: clamp(0.65rem, 1vw + 0.5rem, 0.95rem);
+          &__icon {
+            @include center;
+            width: clamp(2rem, 3vw, 2.25rem);
+            height: clamp(2rem, 3vw, 2.25rem);
+            border-radius: 0.5rem;
+            background-color: $overlayBackground;
+            svg,
+            img {
+              height: clamp(1.1rem, 2vw, 1.25rem);
+            }
+          }
+          &:last-child svg path {
+            stroke: #398dcb;
+          }
+          span {
+            @include ThreeDotsOverflow;
+            max-width: 80%;
+            font-weight: 500;
+            font-size: 0.9rem;
+            height: clamp(0.85rem, 1vw + 0.85rem, 1.4rem);
+            &.free {
+              margin-left: 2.5rem;
+            }
+          }
+          &:nth-child(1) {
+            width: 57.5%;
+          }
+          &:nth-child(2) {
+            width: 42.5%;
+            justify-content: flex-end;
+          }
+          &:nth-child(3) {
+            width: 100%;
+          }
+        }
+      }
+      &__button {
+        padding: 0 10%;
+        button {
+          width: 100%;
+          height: 2.25rem;
+          font-weight: 800;
+          font-size: clamp(0.7rem, 2vw, 0.85rem);
+          border-radius: 0.5rem;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+@import "variables";
+@import "mediaQueries";
+
+body {
+  background-color: $background;
+}
+.main-container {
+  position: relative;
+  height: fit-content;
+  overflow: hidden;
+  width: 100%;
+}
+.app {
+  @include transition(all 500ms);
+  margin: 0 auto;
+  max-width: 100rem;
+}

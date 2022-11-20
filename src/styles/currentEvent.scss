@@ -1,0 +1,311 @@
+@import "variables";
+@import "mediaQueries";
+
+.current-event {
+  margin-top: 2rem;
+  &__container,
+  .container {
+    margin-top: 2rem;
+    height: 30rem;
+    width: 100%;
+    display: grid;
+    column-gap: 2rem;
+    grid-template-columns: 3fr 1fr;
+    @include tablet {
+      height: fit-content;
+      row-gap: 1.25rem;
+      grid-template-columns: 1fr;
+    }
+    &__image {
+      @include center;
+      width: 100%;
+      height: 100%;
+      max-width: 75rem;
+      overflow: hidden;
+      border-radius: clamp(1.5rem, 4vw, 2rem);
+      img {
+        object-fit: cover;
+        transition: transform 2s ease-in-out;
+      }
+      @include tablet {
+        width: 100%;
+        height: clamp(12.5rem, 70vw, 30rem);
+        img {
+          height: 100%;
+          width: 170vw;
+        }
+      }
+    }
+    &__content,
+    .content {
+      @include flex(center, flex-start, column);
+      height: 30rem;
+      width: 26.5rem;
+      overflow: hidden;
+      background: $darkBackground;
+      border-radius: clamp(1.5rem, 4vw, 2rem);
+      @include tablet {
+        margin: 0 auto;
+        width: clamp(14rem, 10vw + 24rem, 40rem);
+        height: 29rem;
+      }
+      @include mobile {
+        width: 100%;
+      }
+      &__header,
+      .header {
+        @include flex(flex-start, center, column);
+        padding: 0 clamp(2.5vw, 3vw + 1rem, 2.5rem);
+        position: relative;
+        inset: 0.75rem auto 0 auto;
+        z-index: 2;
+        width: 95%;
+        height: 50%;
+        border-radius: 1.75rem;
+        background-color: $orangeColor;
+        span.notch {
+          position: absolute;
+          width: 0.9rem;
+          height: 1.4rem;
+          background: $darkBackground;
+          b {
+            position: absolute;
+            height: 50%;
+            width: 100%;
+            background: $darkBackground;
+            &::after {
+              content: "";
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              background-color: $orangeColor;
+            }
+          }
+          &:nth-child(1) {
+            inset: 20% auto auto 0;
+            border-radius: 0 50% 50% 0;
+            b:nth-child(1) {
+              inset: 100% 0 auto auto;
+              &::after {
+                inset: 0 auto auto 0;
+                border-top-left-radius: 20px;
+              }
+            }
+            b:nth-child(2) {
+              inset: -50% 0 auto auto;
+              &::after {
+                left: 0;
+                border-bottom-left-radius: 20px;
+              }
+            }
+          }
+          &:nth-child(2) {
+            inset: 72.5% auto auto 0;
+            border-radius: 0 50% 50% 0;
+            b:nth-child(1) {
+              inset: 100% 0 auto auto;
+              &::after {
+                inset: 0 auto auto 0;
+                border-top-left-radius: 20px;
+              }
+            }
+            b:nth-child(2) {
+              inset: -50% 0 auto auto;
+              &::after {
+                left: 0;
+                border-bottom-left-radius: 20px;
+              }
+            }
+          }
+          &:nth-child(3) {
+            inset: 20% 0 auto auto;
+            border-radius: 50% 0 0 50%;
+            b:nth-child(1) {
+              inset: 100% 0 auto auto;
+            }
+            b:nth-child(1)::after {
+              inset: 0 auto auto 0;
+              border-top-right-radius: 20px;
+            }
+            b:nth-child(2) {
+              inset: -50% 0 auto auto;
+            }
+            b:nth-child(2)::after {
+              left: 0px;
+              border-bottom-right-radius: 20px;
+            }
+          }
+          &:nth-child(4) {
+            inset: 72.5% 0 auto auto;
+            border-radius: 50% 0 0 50%;
+            b:nth-child(1) {
+              inset: 100% 0 auto auto;
+            }
+            b:nth-child(1)::after {
+              inset: 0 0 auto auto;
+              border-top-right-radius: 20px;
+            }
+            b:nth-child(2) {
+              inset: -50% 0 auto auto;
+            }
+            b:nth-child(2)::after {
+              left: 0px;
+              border-bottom-right-radius: 20px;
+            }
+          }
+        }
+        &__image {
+          width: clamp(1.25rem, 2vw + 2.5rem, 3.25rem);
+          height: clamp(1.25rem, 2vw + 2.5rem, 3.25rem);
+          outline: $lighterBackground solid 4px;
+          border-radius: 100%;
+        }
+        figcaption {
+          margin-top: clamp(0.5rem, 1vw + 0.5rem, 1rem);
+          height: clamp(1vw, 1vw + 1.25rem, 1.85rem);
+          width: 75%;
+          overflow: hidden;
+          font-weight: 500;
+          color: $lighterBackground;
+          font-size: clamp(0.75rem, 1vw + 0.75rem, 1.25rem);
+        }
+        summary {
+          margin-top: 0.3rem;
+          width: 100%;
+          overflow: hidden;
+          color: $lightestBackground;
+          line-height: clamp(0.5rem, 3vw + 0.7rem, 1.5rem);
+          font-size: clamp(0.25rem, 1.5vw + 0.35rem, 0.75rem);
+        }
+        .top-container {
+          @include flex(center, space-between);
+          position: absolute;
+          inset: 0 auto auto 10%;
+          width: 7.75rem;
+          height: clamp(1.25rem, 0.5rem + 2vw, 1.5rem);
+          &__timer {
+            @include flex(center);
+            padding: 0 0.5rem;
+            height: 100%;
+            width: fit-content;
+            column-gap: 0.5rem;
+            border-radius: 0 0 0.5rem 0.5rem;
+            background-color: $lighterBackground;
+            svg {
+              width: 1rem;
+              path {
+                fill: $lightHeader;
+              }
+            }
+            time {
+              font-size: 0.8rem;
+              margin-top: 0.1rem;
+            }
+          }
+          &__ticket {
+            @include center;
+            height: 100%;
+            width: 1.5rem;
+            border-radius: 0 0 0.5rem 0.5rem;
+            background-color: $lighterBackground;
+            svg {
+              width: 95%;
+            }
+          }
+        }
+        &::before {
+          content: "";
+          position: absolute;
+          inset: 10% auto auto 2.5%;
+          width: 45%;
+          height: 80%;
+          background: url("../assets/star-overlay.png");
+          background-size: contain;
+          background-position: center;
+          background-repeat: no-repeat;
+        }
+      }
+      &__list,
+      .list {
+        @include flex(flex-start, space-between);
+        flex-wrap: wrap;
+        margin-top: 1.5rem;
+        padding: 0 2.5%;
+        height: 9.75rem;
+        width: 100%;
+        &__item,
+        .item {
+          @include flex(center);
+          height: 2.75rem;
+          width: 50%;
+          column-gap: 0.5rem;
+          overflow: hidden;
+          &:first-child {
+            svg path {
+              stroke: $lightHeader;
+            }
+          }
+          &:first-child,
+          &:last-child {
+            width: 100%;
+          }
+          &:nth-child(2) {
+            width: 40%;
+          }
+          &:nth-child(3) {
+            justify-content: flex-end;
+            width: 60%;
+          }
+          &__image {
+            @include center;
+            width: clamp(2rem, 6.5vw, 2.5rem);
+            height: clamp(2rem, 6.5vw, 2.5rem);
+            background-color: $SeparatorColor;
+            border-radius: 100%;
+            svg,
+            img {
+              width: clamp(1rem, 3vw, 1.1rem);
+            }
+            img {
+              filter: brightness(1) invert(1);
+            }
+          }
+          span {
+            color: $SeparatorColor;
+            font-weight: 400;
+            font-size: clamp(0.725rem, 2vw, 0.9rem);
+          }
+        }
+      }
+      &__buttons,
+      .buttons {
+        @include flex(center, space-between);
+        margin-top: 0.25rem;
+        height: 2.25rem;
+        width: 95%;
+        a,
+        button {
+          height: 100%;
+          width: 37.5%;
+          font-size: clamp(0.45rem, 2vw, 0.6rem);
+        }
+        button {
+          font-weight: 900;
+          border-radius: 0.5rem;
+          color: $lighterBackground;
+          &:last-child {
+            margin-right: -25%;
+            width: 120%;
+          }
+        }
+        a button {
+          width: 100%;
+          height: 100%;
+          color: $purpleColor;
+          border-radius: 0.5rem;
+          font-size: clamp(0.65rem, 2.5vw, 0.75rem);
+        }
+      }
+    }
+  }
+}

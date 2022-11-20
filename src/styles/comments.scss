@@ -1,0 +1,36 @@
+@import "variables";
+@import "mediaQueries";
+
+.event__comments,
+.comments {
+  &__header,
+  .header {
+    @include flex(center);
+    column-gap: clamp(0.5rem, 1vw + 0.25rem, 1rem);
+    height: 2.5rem;
+
+    img {
+      margin-top: -0.5rem;
+      width: clamp(1.55rem, 4vw, 2.1rem);
+    }
+    h2 {
+      font-weight: 600;
+      font-size: clamp(1.05rem, 3.25vw, 1.45rem);
+      color: $lightHeader;
+    }
+    &__count {
+      margin-right: -0.25rem;
+      font-weight: 400;
+      font-size: clamp(0.95rem, 3.05vw, 1.25rem);
+      color: $lighestHeader;
+    }
+  }
+
+  &__content,
+  .content {
+    .comments__container {
+      margin: clamp(2rem, 1vw + 2rem, 5rem) 2.5% 7.5rem 2.5%;
+      width: 95%;
+    }
+  }
+}

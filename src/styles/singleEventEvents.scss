@@ -1,0 +1,57 @@
+@import "variables";
+@import "mediaQueries";
+
+.event__events,
+.events {
+  margin: 0rem auto 10rem auto;
+  &__header,
+  .header {
+    @include flex(center, space-between);
+    &__content {
+      @include flex(center);
+      column-gap: 1rem;
+      img {
+        width: clamp(1.55rem, 4vw, 2.1rem);
+      }
+      h2 {
+        font-weight: 600;
+        font-size: clamp(1.05rem, 3.25vw, 1.45rem);
+        color: $lightHeader;
+      }
+    }
+    &__navigators {
+      @include flex(center);
+      column-gap: 0.75rem;
+      margin-left: clamp(0.5rem, 0.5vw + 0.25rem, 1rem);
+    }
+  }
+  &__container,
+  .container {
+    @include flex(center, space-between, wrap);
+    margin: 2rem auto 0 auto;
+    height: 34rem;
+    @include tablet {
+      margin-top: 0;
+    }
+    .swiper-slide {
+      @include flex(center, space-between);
+      width: 100%;
+      height: 33rem;
+      row-gap: 6rem;
+      flex-wrap: wrap;
+      .eventPreview {
+        @include tablet {
+          &:nth-child(2),
+          &:nth-child(3),
+          &:nth-child(4) {
+            display: none;
+          }
+        }
+      }
+      @include tablet {
+        gap: 6rem 4rem;
+        @include flex(center, center);
+      }
+    }
+  }
+}
