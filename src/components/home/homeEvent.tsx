@@ -9,6 +9,7 @@ import CostIcon from "../../assets/icons/cost";
 import MapIcon from "../../assets/icons/map.svg";
 import LocationIcon from "../../assets/icons/location";
 import CompassIcon from "../../assets/icons/header/compass.svg";
+
 interface Props {
   eventImage: string;
   spaceImage: string;
@@ -32,6 +33,7 @@ function HomeEvent(props: Props) {
       <div className="content__header">
         <img src={props.spaceImage} alt="" className="header__space" loading="lazy" />
         <div className="header__logo">
+          <b />
           <img src={props.eventImage} alt="" loading="lazy" />
         </div>
         <div className="header__timer">

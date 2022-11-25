@@ -62,26 +62,66 @@
         }
         &__logo {
           position: absolute;
-          inset: clamp(10.15rem, 5vw + 6rem, 10.25rem) clamp(3.7rem, 5vw, 3.75rem) auto auto;
-          width: clamp(3.25rem, 5vw, 3.75rem);
-          height: clamp(3.25rem, 5vw, 3.75rem);
+          inset: 10.2rem 3.725rem auto auto;
+          width: 3.75rem;
+          height: 3.75rem;
           border-radius: 100%;
-          &::before {
-            content: "";
-            position: absolute;
-            inset: -15% -60% auto auto;
-            z-index: 1;
-            width: 215%;
-            height: 80%;
-            background-repeat: no-repeat;
-            background-size: contain;
-            background-image: url("../assets/white-hill.png");
+          @include tablet {
+            width: 3.5rem;
+            height: 3.5rem;
+          }
+          @include mobile {
+            width: 3.25rem;
+            height: 3.25rem;
           }
           img {
-            position: inherit;
+            position: absolute;
+            margin: 0.4rem;
             height: 100%;
             width: 100%;
-            z-index: 1;
+            @include tablet {
+              margin: 0.35rem;
+              top: -0.5rem;
+            }
+          }
+          b {
+            position: absolute;
+            inset: 0;
+            width: 120%;
+            height: 100%;
+            border-radius: 50% 50% 0 0;
+            background-color: $lighterBackground;
+            @include tablet {
+              top: -0.5rem;
+            }
+            &::after,
+            &::before {
+              content: "";
+              position: absolute;
+              width: 45%;
+              height: 35%;
+              top: 0.75rem;
+              @include mobile {
+                top: 0.9rem;
+                width: 45%;
+              }
+            }
+            &::before {
+              left: -37.5%;
+              border-bottom-right-radius: 100%;
+              box-shadow: 0.25rem 0.5rem $lighterBackground;
+              @include mobile {
+                left: -40.5%;
+              }
+            }
+            &::after {
+              left: 92.5%;
+              border-bottom-left-radius: 100%;
+              box-shadow: -0.25rem 0.5rem $lighterBackground;
+              @include mobile {
+                left: 95.5%;
+              }
+            }
           }
         }
         &__timer {

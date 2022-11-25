@@ -6,7 +6,7 @@
   &__header,
   .header {
     @include flex(center);
-    column-gap: clamp(0.5rem, 1vw + 0.25rem, 1rem);
+    column-gap: 0.75rem;
     height: 2.5rem;
 
     img {
@@ -15,22 +15,26 @@
     }
     h2 {
       font-weight: 600;
-      font-size: clamp(1.05rem, 3.25vw, 1.45rem);
       color: $lightHeader;
+      font-size: clamp(1.05rem, 3.25vw, 1.45rem);
     }
     &__count {
       margin-right: -0.25rem;
+      color: $lighestHeader;
       font-weight: 400;
       font-size: clamp(0.95rem, 3.05vw, 1.25rem);
-      color: $lighestHeader;
     }
   }
 
   &__content,
   .content {
     .comments__container {
-      margin: clamp(2rem, 1vw + 2rem, 5rem) 2.5% 7.5rem 2.5%;
+      margin: 3.5rem 2.5% 7.5rem 2.5%;
+      padding-left: 2.5%;
       width: 95%;
+      @include tablet {
+        margin-top: 2rem;
+      }
     }
   }
 }

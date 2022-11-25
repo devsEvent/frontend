@@ -19,11 +19,11 @@ function SliderWrapper({
       direction={direction}
       autoplay={{
         delay: 3000,
-        disableOnInteraction: false,
       }}
       pagination={{
         clickable: true,
       }}
+      slidesPerView={"auto"}
       loop={true}
       modules={pagination ? [Pagination, Autoplay] : [Autoplay]}
       navigation={true}

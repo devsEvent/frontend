@@ -16,7 +16,7 @@
     height: fit-content;
   }
   h5 {
-    margin-bottom: clamp(0.75rem, 1vw + 0.5rem, 1rem);
+    margin-bottom: 0.8rem;
     font-size: clamp(1rem, 2vw + 1.1rem, 2.25rem);
     font-weight: 800;
   }
@@ -29,7 +29,7 @@
       line-height: 2.25rem !important;
     }
     &.first {
-      width: clamp(50%, 51%, 66%);
+      width: 55%;
       width: 66%;
       line-height: 3rem;
       @include tablet {
@@ -112,23 +112,21 @@
       padding: 0 1.5rem;
       height: 75%;
       width: 32.5%;
-      border: none;
-      outline: none;
       overflow: hidden;
       border-radius: 3rem;
       background-color: $orangeColor;
       @include transition(all 1s ease-out);
       span {
-        color: $lighterBackground;
-        font-size: 1.25rem;
         font-weight: 600;
+        font-size: 1.25rem;
+        color: $lighterBackground;
         @include tablet {
           font-size: 0.9rem;
         }
       }
       img {
-        width: 2.5rem;
         @include transition(all 1s ease-out);
+        width: 2.5rem;
         transition-delay: 500ms;
         @include tablet {
           width: 2rem;

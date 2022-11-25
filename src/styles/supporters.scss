@@ -9,7 +9,28 @@
   .supporters__list {
     @include flex(center, space-between);
     margin-top: clamp(2.5rem, 4vw, 4rem);
-    width: 100%;
+    position: relative;
+
+    img {
+      height: 4rem;
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      width: 7.5rem;
+      z-index: 2;
+      height: 100%;
+    }
+    &::before {
+      inset: 0 auto auto 0;
+      background: linear-gradient(90deg, $background, transparent);
+    }
+    &::after {
+      inset: 0 0 auto auto;
+      background: linear-gradient(90deg, transparent, $background);
+    }
 
     @media screen and (max-width: 1289px) {
       @include flex(center, center);
@@ -17,17 +38,17 @@
       flex-wrap: wrap;
     }
 
-    img {
-      height: 4rem;
+    .swiper-slide {
+      @include center;
+      padding: 0 5rem !important;
+      width: fit-content !important;
+      max-width: 100%;
+      @include mobile {
+        width: 100% !important;
+      }
     }
 
-    &.slider {
-      display: none;
-    }
     @include tablet {
-      &.static {
-        display: none;
-      }
       &.slider {
         display: flex;
         .swiper-slide {

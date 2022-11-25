@@ -17,23 +17,15 @@
       grid-template-columns: 1fr;
     }
     &__image {
-      @include center;
+      @include flex(center, center);
       width: 100%;
       height: 100%;
-      max-width: 75rem;
       overflow: hidden;
-      border-radius: clamp(1.5rem, 4vw, 2rem);
+      border-radius: 1.5rem;
       img {
-        object-fit: cover;
-        transition: transform 2s ease-in-out;
-      }
-      @include tablet {
-        width: 100%;
-        height: clamp(12.5rem, 70vw, 30rem);
-        img {
-          height: 100%;
-          width: 170vw;
-        }
+        flex-shrink: 0;
+        min-width: 100%;
+        min-height: 100%;
       }
     }
     &__content,
@@ -42,11 +34,11 @@
       height: 30rem;
       width: 26.5rem;
       overflow: hidden;
+      border-radius: 1.5rem;
       background: $darkBackground;
-      border-radius: clamp(1.5rem, 4vw, 2rem);
       @include tablet {
         margin: 0 auto;
-        width: clamp(14rem, 10vw + 24rem, 40rem);
+        width: 26.5rem;
         height: 29rem;
       }
       @include mobile {
@@ -55,10 +47,9 @@
       &__header,
       .header {
         @include flex(flex-start, center, column);
-        padding: 0 clamp(2.5vw, 3vw + 1rem, 2.5rem);
         position: relative;
         inset: 0.75rem auto 0 auto;
-        z-index: 2;
+        padding: 0 2rem;
         width: 95%;
         height: 50%;
         border-radius: 1.75rem;
@@ -155,22 +146,22 @@
           }
         }
         &__image {
-          width: clamp(1.25rem, 2vw + 2.5rem, 3.25rem);
-          height: clamp(1.25rem, 2vw + 2.5rem, 3.25rem);
+          width: 3rem;
+          height: 3rem;
           outline: $lighterBackground solid 4px;
           border-radius: 100%;
         }
         figcaption {
-          margin-top: clamp(0.5rem, 1vw + 0.5rem, 1rem);
-          height: clamp(1vw, 1vw + 1.25rem, 1.85rem);
+          margin-top: 0.75rem;
           width: 75%;
+          height: clamp(1vw, 1vw + 1.25rem, 1.85rem);
+          font-size: clamp(0.75rem, 1vw + 0.75rem, 1.25rem);
           overflow: hidden;
           font-weight: 500;
           color: $lighterBackground;
-          font-size: clamp(0.75rem, 1vw + 0.75rem, 1.25rem);
         }
         summary {
-          margin-top: 0.3rem;
+          margin-top: 0.35rem;
           width: 100%;
           overflow: hidden;
           color: $lightestBackground;
@@ -182,7 +173,7 @@
           position: absolute;
           inset: 0 auto auto 10%;
           width: 7.75rem;
-          height: clamp(1.25rem, 0.5rem + 2vw, 1.5rem);
+          height: 1.4rem;
           &__timer {
             @include flex(center);
             padding: 0 0.5rem;
@@ -227,8 +218,7 @@
       }
       &__list,
       .list {
-        @include flex(flex-start, space-between);
-        flex-wrap: wrap;
+        @include flex(flex-start, space-between, row, wrap);
         margin-top: 1.5rem;
         padding: 0 2.5%;
         height: 9.75rem;
@@ -258,22 +248,30 @@
           }
           &__image {
             @include center;
-            width: clamp(2rem, 6.5vw, 2.5rem);
-            height: clamp(2rem, 6.5vw, 2.5rem);
-            background-color: $SeparatorColor;
+            width: 2.5rem;
+            height: 2.5rem;
             border-radius: 100%;
+            background-color: $SeparatorColor;
             svg,
             img {
-              width: clamp(1rem, 3vw, 1.1rem);
+              width: 1.1rem;
             }
             img {
               filter: brightness(1) invert(1);
+            }
+            @include mobile {
+              width: 2rem;
+              height: 2rem;
+              svg,
+              img {
+                width: 0.9rem;
+              }
             }
           }
           span {
             color: $SeparatorColor;
             font-weight: 400;
-            font-size: clamp(0.725rem, 2vw, 0.9rem);
+            font-size: clamp(0.7rem, 2vw, 0.9rem);
           }
         }
       }

@@ -20,7 +20,6 @@ function Banner() {
         <a>رویداد رفرش کانف دورهمی برنامه نویسان بک اند</a>
         <h4>
           مکان
-          {/* <img src={LocationIcon} alt="" /> */}
           <span>اصفهان چهارباغ نبش مسجد جامع سالن همایش قیاصی </span>
         </h4>
         <div className="content_details">

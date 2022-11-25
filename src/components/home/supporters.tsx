@@ -15,20 +15,14 @@ import SevenLearnLogo from "../../assets/supportersLogo/7learn.svg";
 
 import "../../styles/supporters.scss";
 
+
+
 function Supporters() {
   return (
     <section className="home__supporters supporters">
       <Header title="اسپانسرها و حامیان" icon={ChartIcon} />
 
-      <div className="supporters__list static">
-        <img src={SevenLearnLogo} alt="" loading="lazy" />
-        <img src={DigikalaLogo} alt="" loading="lazy" />
-        <img src={ZhakatLogo} alt="" loading="lazy" />
-        <img src={RTLLogo} alt="" loading="lazy" />
-        <img src={IranHostLogo} alt="" loading="lazy" />
-      </div>
-
-      <div className="supporters__list slider">
+      <div className="supporters__list">
         <SliderWrapper direction="horizontal" pagination={false}>
           <SwiperSlide>
             <img src={SevenLearnLogo} alt="" loading="lazy" />

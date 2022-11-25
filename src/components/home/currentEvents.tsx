@@ -11,8 +11,8 @@ import TeaIcon from "../../assets/icons/tea.svg";
 import InProgressIcon from "../../assets/icons/header/in-progress.svg";
 
 // Event example images
-import EventSpaceImage from "../../assets/mvp/event-image.webp";
 import EventImage from "../../assets/mvp/dev-summit.webp";
+import EventSpaceImage from "../../assets/mvp/event-image.webp";
 
 import "../../styles/currentEvent.scss";
 import LocationIcon from "../../assets/icons/location";
