@@ -4,28 +4,33 @@
 .events {
   section {
     .banner {
-      @include flex(center);
-      position: relative;
       padding: 2rem;
-      height: 12.5rem;
-      border-radius: 10px 10px 10px 1rem;
-      box-shadow: $boxShadow;
-      background-color: $lighterBackground;
-      column-gap: 1rem;
-      flex-wrap: wrap;
+      position: relative;
       height: fit-content;
-      gap: 1.5rem 1rem;
-      @include tablet {
-        padding: 2rem 0.75rem;
-        gap: 0.5rem;
+      display: grid;
+      align-items: center;
+      box-shadow: $boxShadow;
+      border-radius: 10px 10px 10px 1rem;
+      background-color: $lighterBackground;
+      grid-template-areas: "logo content content spaces";
+      @media screen and (max-width: 1350px) {
+        padding-right: 1rem;
+        gap: 1rem 0.5rem;
+        grid-template-areas:
+          "logo content content content"
+          "none spaces spaces spaces";
+        grid-template-columns: 0.5fr 1fr 1fr 1fr;
       }
-      @media screen and (min-width: 1355px) {
-        justify-content: space-between;
+      @include mobile {
+        grid-template-areas:
+          "logo content content content"
+          "spaces spaces spaces spaces";
       }
       .banner_logo {
         @include center;
-        width: 7.5rem;
-        height: 7.5rem;
+        width: 7rem;
+        height: 7rem;
+        grid-area: logo;
         border-radius: 100%;
         border: 2px solid $purpleColor;
         img {
@@ -34,6 +39,14 @@
           border-radius: 100%;
         }
         @include tablet {
+          width: 5rem;
+          height: 5rem;
+          img {
+            width: 4rem;
+            height: 4rem;
+          }
+        }
+        @include mobile {
           width: 4rem;
           height: 4rem;
           img {
@@ -44,6 +57,7 @@
       }
       .banner_content {
         width: fit-content;
+        grid-area: content;
         a {
           @include ThreeDotsOverflow;
           height: 2rem;
@@ -128,11 +142,12 @@
         flex-wrap: wrap;
         row-gap: 0.5rem;
         overflow: hidden;
+        grid-area: spaces;
         @include tablet {
           width: 15.5rem;
         }
         @include mobile {
-          margin-right: 5rem;
+          height: fit-content;
         }
         @media screen and (max-width: 368px) {
           margin-right: 0;

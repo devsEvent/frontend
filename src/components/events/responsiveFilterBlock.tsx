@@ -5,6 +5,8 @@ import LocationFilter from "./locationFilter";
 import EventTypeFilter from "./eventTypeFilter";
 import MobileEventsFilterContainer from "./mobileEventsFilterContainer";
 
+import "../../styles/responsiveFilterBloack.scss";
+
 const DEFAULTCOSTMAX = 750000;
 
 interface Props {
@@ -40,6 +42,7 @@ function ResponsiveFilterBlock({
             </MobileEventsFilterContainer>
             <MobileEventsFilterContainer title="محدوده قیمت">
               <CostFilter
+                mobile
                 maxCost={maxCost}
                 MaxCostHandler={MaxCostHandler}
                 DEFAULTCOSTMAX={DEFAULTCOSTMAX}
