@@ -35,7 +35,7 @@ function Banner() {
         {Array.apply(0, new Array(4))
           .slice(0, 3)
           .map((item, index) => (
-            <Link key={index} to="/events/دورهمی-برنامه-نویسان-بک-اند">
+            <Link key={index} to="/events/دورهمی-برنامه-نویسان-بک-اند" >
               <img src={hamyarSpace} alt="" key={index} />
             </Link>
           ))}

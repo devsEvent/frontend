@@ -27,7 +27,7 @@ function App() {
               <Route index element={<Events />} />
               <Route path=":event" element={<Event />} />
             </Route>
-            {/* <Route path="/about" element={<HomeLayout />} /> */}
+            
             <Route path="/contact" element={<HomeLayout />} />
             <Route path="*" element={<Error404 />} />
           </Routes>

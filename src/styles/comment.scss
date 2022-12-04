@@ -141,10 +141,13 @@
         }
       }
       &__text {
-        margin-top: 1.5rem;
+        margin-top: 2.25rem;
         font-size: clamp(0.65rem, 1vw + 0.6rem, 1.1rem);
         line-height: clamp(1.25rem, 2vw + 1.75rem, 2.5rem);
         color: $lighterHeader;
+        @include tablet {
+          margin-top: 1.5rem;
+        }
         @include mobile {
           font-size: 3vw;
           margin-top: 2.5vw;

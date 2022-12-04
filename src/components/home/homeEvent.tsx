@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, memo } from "react";
 import { Link } from "react-router-dom";
 
 import { NumSeparate } from "../../modules/numberSeparate";
@@ -110,4 +110,4 @@ function HomeEvent(props: Props) {
   );
 }
 
-export default HomeEvent;
+export default memo(HomeEvent);

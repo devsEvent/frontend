@@ -18,7 +18,7 @@
       font-weight: 600;
       color: $mainHeader;
       border-bottom: 2px solid #eeeeee;
-      h5 {
+      p {
         font-size: 1.1rem;
         font-weight: 500;
       }
@@ -113,20 +113,18 @@
           background-color: $SeparatorColor;
         }
         .type_container {
-          height: 13rem;
+          height: 12rem;
           border-bottom: none;
           margin-bottom: 0.5rem;
           button label {
             font-size: 1rem;
             font-weight: 400;
           }
-          a {
-            display: block;
-            margin-top: 1rem;
-            font-weight: 300;
-            font-size: 1rem;
-            color: $lightHeader;
-          }
+        }
+        a {
+          font-weight: 300;
+          font-size: 1rem;
+          color: $lightHeader;
         }
       }
     }

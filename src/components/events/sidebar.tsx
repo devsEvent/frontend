@@ -6,42 +6,42 @@ import FilterCollpaseExpand from "./filterCollpaseExpand";
 import "../../styles/eventsSidebar.scss";
 
 interface Props {
-  maxCost: number;
   DEFAULTCOSTMAX: number;
-  MaxCostHandler: (e: any) => void;
-  sepratedMaxCost: string | undefined;
-  setMaxCost: (DEFAULTCOSTMAX: number) => void;
+  resetHandler: () => void;
 }
 
-function Sidebar({ DEFAULTCOSTMAX, maxCost, setMaxCost, MaxCostHandler, sepratedMaxCost }: Props) {
+function Sidebar({ DEFAULTCOSTMAX, resetHandler }: Props) {
   return (
     <aside className="events__sidebar sidebar">
-      <form>
+      <form
+        onSubmit={(e) => {
+          e.preventDefault();
+        }}
+      >
         <div className="filter_header">
-          <h5>فیلتر</h5>
+          <p>فیلتر</p>
           <button
             className="filter_reset"
             type="reset"
             onClick={() => {
-              setMaxCost(DEFAULTCOSTMAX);
+              resetHandler();
             }}
           >
             ریست
           </button>
         </div>
+
         <FilterCollpaseExpand title="قیمت">
-          <CostFilter
-            maxCost={maxCost}
-            MaxCostHandler={MaxCostHandler}
-            DEFAULTCOSTMAX={DEFAULTCOSTMAX}
-            sepratedMaxCost={sepratedMaxCost}
-          />
+          <CostFilter DEFAULTCOSTMAX={DEFAULTCOSTMAX} />
         </FilterCollpaseExpand>
+
         <FilterCollpaseExpand title="مکان">
           <LocationFilter />
         </FilterCollpaseExpand>
+
         <FilterCollpaseExpand title="نوع مراسم">
           <EventTypeFilter />
+
           <a href="">دیدن همه</a>
         </FilterCollpaseExpand>
       </form>

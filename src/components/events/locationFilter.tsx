@@ -1,28 +1,28 @@
 import LocationRadio from "../../components/locationRadio";
 
 function LocationFilter() {
+  const locations = [
+    "همه جای ایران",
+    "تهران",
+    "اصفهان",
+    "یزد",
+    "کاشان",
+    "اردبیل",
+    "کرج",
+    "زاهدان",
+    "ساری",
+    "ابادان",
+    "مریوان",
+    "سقز",
+    "سنندج",
+    "شهرکرد",
+  ];
+
   return (
     <div className="location_container">
-      <button className="btn radio">
-        <input type="radio" id={"تهران"} value={"تهران"} name={"location_filter"} defaultChecked />
-        <label htmlFor={"تهران"}>تهران</label>
-      </button>
-      <LocationRadio title="اصفهان" />
-      <LocationRadio title="یزد" />
-      <LocationRadio title="اصفهان" />
-      <LocationRadio title="یزد" />
-      <LocationRadio title="اصفهان" />
-      <LocationRadio title="یزد" />
-      <LocationRadio title="اصفهان" />
-      <LocationRadio title="یزد" />
-      <LocationRadio title="اصفهان" />
-      <LocationRadio title="یزد" />
-      <LocationRadio title="اصفهان" />
-      <LocationRadio title="یزد" />
-      <LocationRadio title="اصفهان" />
-      <LocationRadio title="یزد" />
-      <LocationRadio title="اصفهان" />
-      <LocationRadio title="یزد" />
+      {locations.map((item, index) => (
+        <LocationRadio title={item} key={index} />
+      ))}
     </div>
   );
 }

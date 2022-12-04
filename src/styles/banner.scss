@@ -12,7 +12,7 @@
       box-shadow: $boxShadow;
       border-radius: 10px 10px 10px 1rem;
       background-color: $lighterBackground;
-      grid-template-areas: "logo content content spaces";
+      grid-template-areas: "logo content content content spaces";
       @media screen and (max-width: 1350px) {
         padding-right: 1rem;
         gap: 1rem 0.5rem;
@@ -138,7 +138,7 @@
       .banner_spaces {
         @include flex(center, space-between);
         height: 5rem;
-        width: 20rem;
+        max-width: 20rem;
         flex-wrap: wrap;
         row-gap: 0.5rem;
         overflow: hidden;

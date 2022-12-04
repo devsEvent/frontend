@@ -7,20 +7,16 @@ import MobileEventsFilterContainer from "./mobileEventsFilterContainer";
 
 import "../../styles/responsiveFilterBloack.scss";
 
-const DEFAULTCOSTMAX = 750000;
-
 interface Props {
-  maxCost: number;
-  MaxCostHandler: (e: any) => void;
-  sepratedMaxCost: string | undefined;
+  DEFAULTCOSTMAX: number;
+  resetHandler: () => void;
   isMobileFilterSectionCollapsed: boolean;
   SetMobileSectionFilterCollapsed: () => void;
 }
 
 function ResponsiveFilterBlock({
-  maxCost,
-  MaxCostHandler,
-  sepratedMaxCost,
+  resetHandler,
+  DEFAULTCOSTMAX,
   isMobileFilterSectionCollapsed,
   SetMobileSectionFilterCollapsed,
 }: Props) {
@@ -37,22 +33,32 @@ function ResponsiveFilterBlock({
             <MobileEventsFilterContainer title="مکان مراسم">
               <LocationFilter />
             </MobileEventsFilterContainer>
+
             <MobileEventsFilterContainer title="نوع مراسم">
               <EventTypeFilter />
             </MobileEventsFilterContainer>
+
             <MobileEventsFilterContainer title="محدوده قیمت">
-              <CostFilter
-                mobile
-                maxCost={maxCost}
-                MaxCostHandler={MaxCostHandler}
-                DEFAULTCOSTMAX={DEFAULTCOSTMAX}
-                sepratedMaxCost={sepratedMaxCost}
-              />
+              <CostFilter mobile DEFAULTCOSTMAX={DEFAULTCOSTMAX} />
             </MobileEventsFilterContainer>
 
             <div className="content__buttons buttons">
-              <button className="buttons__submit">تایید</button>
-              <button className="buttons__reset" onClick={SetMobileSectionFilterCollapsed}>
+              <button
+                className="buttons__submit"
+                onClick={() => {
+                  SetMobileSectionFilterCollapsed();
+                }}
+              >
+                تایید
+              </button>
+
+              <button
+                className="buttons__reset"
+                onClick={() => {
+                  resetHandler();
+                  SetMobileSectionFilterCollapsed();
+                }}
+              >
                 لغو فیلتر
               </button>
             </div>
