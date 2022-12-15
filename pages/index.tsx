@@ -23,16 +23,7 @@ const Home: NextPage = () => {
     return <Loading />;
   }
 
-  return (
-    <div className="bg-black h-screen w-full dark">
-      <main className={`h-full w-full ${styles.center}`}>
-        <div className="h-10 w-44  rounded-xl loading"></div>
-        {data.result.map(({ slug }: { slug: string }) => (
-          <div key={slug}>{slug}</div>
-        ))}
-      </main>
-    </div>
-  );
+  return <div className="bg-black-900 h-screen w-full"></div>;
 };
 
 export default Home;
