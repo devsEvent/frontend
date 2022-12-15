@@ -2,13 +2,13 @@
   Devs Event Front-end
 </h1>
 
-<a href="https://devevents.ir">
+<a href="https://devevent.ir">
 <img src="banner.png" alt="A community for people interested in participating in programming events">
 </a>
 
 <div align="center">
 <br/>
-<a href="https://github.com/othneildrew/Best-README-Template">
+<a href="https://devevent.ir/">
 <img src="logo.svg" alt="Logo" width="150" height="150">
 </a>
 <h4 align="center"><strong>A community for people interested in participating in programming events</strong></h4>
