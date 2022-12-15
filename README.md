@@ -2,7 +2,9 @@
   Devs Event Front-end
 </h1>
 
+<a href="https://devevents.ir">
 <img src="banner.png" alt="A community for people interested in participating in programming events">
+</a>
 
 <div align="center">
 <br/>
