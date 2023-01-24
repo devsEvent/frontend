@@ -7,3 +7,88 @@
   margin: 0;
   padding: 0;
 }
+
+body {
+  direction: rtl;
+}
+
+.bg-primary-3 {
+  background: linear-gradient(180deg, #684fff 0%, #b871fe 100%);
+}
+
+.link-badge {
+  position: relative;
+}
+
+.link-badge::after,
+.link-badge::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  height: 2px;
+  width: 100%;
+  border-radius: 2rem;
+  background-color: #684fff;
+  animation: stretch 300ms;
+}
+
+.link-badge::after {
+  bottom: 1px;
+}
+
+.link-badge::before {
+  top: 1px;
+}
+
+@keyframes stretch {
+  from {
+    opacity: 0;
+    width: 0;
+  }
+  to {
+    opacity: 1;
+    width: 100%;
+  }
+}
+
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+}
+.mySwiper {
+  height: 100%;
+  width: 100%;
+}
+
+.three-dots {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.comments-background {
+  background-image: url("../public/comments-background.svg");
+  background-position: center;
+  background-size: cover;
+}
+.comments-three-dots {
+  overflow: hidden;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3; /* limit to 2 lines */
+}

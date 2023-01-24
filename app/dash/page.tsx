@@ -10,7 +10,7 @@ const fetchEvents = async () => {
 
     return data;
   } catch {
-    return undefined;
+    throw new Error("ha ha ha ha");
   }
 };
 
