@@ -7,7 +7,10 @@ import { TimeIcon } from "../../public/icons";
 
 function EventPreview() {
   return (
-    <Link href={"/events"} className="px-3 py-4 relative w-full lg:w-[20rem] bg-secondary rounded-2xl shadow-sm">
+    <Link
+      href={"/events"}
+      className="px-3 py-4 relative w-full max-w-[20rem] lg:w-[20rem] bg-secondary rounded-2xl shadow-sm"
+    >
       <Image src={EventPreviewImage} alt={""} className="w-full rounded-2xl" />
 
       <p className="mt-3 text-dark opacity-50 text-[.9rem] w-full">12 اردیبهشت ۱۴۰۱</p>

@@ -1,20 +1,26 @@
 import React from "react";
 
 import Header from "../components/header";
-import UserComments from "../components/userComments";
-import BestEventsSection from "./bestEventsSection";
 import AllEventsSection from "./allEventsSection";
+import BestEventsSection from "./bestEventsSection";
+import SignUpSection from "../components/signUpHome";
+import UserComments from "../components/userComments";
+import EmailSettler from "../components/emailSettler";
 
 function Page() {
   return (
-    <div className="h-screen">
+    <div>
       <Header />
 
       <AllEventsSection />
 
       <UserComments />
 
+      <SignUpSection />
+
       <BestEventsSection />
+
+      <EmailSettler />
     </div>
   );
 }

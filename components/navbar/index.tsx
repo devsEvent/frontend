@@ -9,6 +9,7 @@ import { usePathname } from "next/navigation";
 import NavLink from "./navLink";
 
 import { LoginIcon, Logo, MenuIcon, NotifactionIcon, SearchIcon } from "../../public/icons";
+import { styles } from "../../styles";
 
 function Navbar() {
   const path = usePathname();
@@ -54,7 +55,7 @@ function Navbar() {
 
         <Image src={NotifactionIcon} alt="notification icon" className="w-12" />
 
-        <Link href="/login" className="hidden px-[.9rem] py-2 md:flex items-center gap-x-3 bg-primary-3 rounded-full">
+        <Link href="/login" className={`${styles.secondary} hidden md:flex items-center gap-x-3 `}>
           <span className="text-white">ورود</span>
           <Image src={LoginIcon} alt="login icon" className="w-5" />
         </Link>

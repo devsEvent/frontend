@@ -1,9 +1,10 @@
 import Banner from "../components/banner";
 import Navbar from "../components/navbar";
 
-import "../styles/globals.css";
-
 import localFont from "@next/font/local";
+import Footer from "../components/footer";
+
+import "../styles/globals.css";
 
 const iranyekan = localFont({
   src: [
@@ -53,6 +54,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         </header>
 
         <div className="mt-6 mx-auto max-w-full xl:max-w-[95rem]">{children}</div>
+
+        <Footer />
       </body>
     </html>
   );

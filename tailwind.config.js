@@ -6,6 +6,7 @@ module.exports = {
       fontFamily: ["iranyekan"],
       colors: {
         dark: "#131313",
+        "dim-dark": "#13131375",
         primary: "#684FFF",
         "primary-2": "#B871FE",
         secondary: "#F1F1F1",

@@ -92,3 +92,8 @@ body {
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3; /* limit to 2 lines */
 }
+.email-settler-background {
+  background: url("../public/email-settler-backgorund.svg"), linear-gradient(180deg, #684fff 0%, #b871fe 100%);
+  background-position: center;
+  background-size: cover;
+}
