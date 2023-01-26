@@ -19,7 +19,7 @@ function EmailSettler() {
           <input
             type="text"
             placeholder="ایمیل خود را وارد کنید ..."
-            className="p-4 w-full lg:w-[55%] text-[.75rem] md:text-[.9rem] bg-secondary-transparent text-secondary placeholder:text-secondary rounded-full outline-none"
+            className="p-4 w-full lg:w-[55%] text-[.8rem] md:text-[.9rem] bg-secondary-transparent text-secondary placeholder:text-secondary rounded-full outline-none"
           />
 
           <button className="py-4 px-6 w-full lg:w-fit text-primary font-semibold bg-secondary rounded-full">
