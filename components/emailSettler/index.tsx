@@ -7,7 +7,7 @@ function EmailSettler() {
     <section className="mt-16 mx-5 lg:mx-9 p-9 lg:px-20 lg:py-0 h-fit lg:h-[27.5rem] flex items-center justify-between flex-col lg:flex-row gap-y-8 rounded-3xl email-settler-background bg-primary-3 ">
       <Image src={EmailSettlerImage} alt="" className="w-full md:w-[40%] " />
 
-      <div className="w-full lg:w-[45%] flex flex-col items-center lg:block">
+      <form className="w-full lg:w-[45%] flex flex-col items-center lg:block">
         <h1 className="text-white text-[1.25rem] md:text-[1.75rem]">خبرنامه رایگان</h1>
 
         <p className="mt-4 text-white text-[.65rem] md:text-[1rem] text-center lg:text-start lg:pl-18 xl:pl-28 leading-7">
@@ -26,7 +26,7 @@ function EmailSettler() {
             ارسال
           </button>
         </div>
-      </div>
+      </form>
     </section>
   );
 }

@@ -8,9 +8,9 @@ import Header from "../components/elements/header";
 function BestEventsSection() {
   return (
     <section className="mt-20  flex flex-col items-center">
-      <HeaderBox text="برترین" />
+      <HeaderBox>برترین</HeaderBox>
 
-      <Header text={"برترین دورهمی ها و ایونت ها"} />
+      <Header>برترین دورهمی ها و ایونت ها</Header>
 
       <div className="mt-10 px-2  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 xl:gap-6">
         <EventPreview />

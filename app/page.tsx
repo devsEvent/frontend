@@ -9,7 +9,7 @@ import EmailSettler from "../components/emailSettler";
 
 function Page() {
   return (
-    <div>
+    <main>
       <Header />
 
       <AllEventsSection />
@@ -21,7 +21,7 @@ function Page() {
       <BestEventsSection />
 
       <EmailSettler />
-    </div>
+    </main>
   );
 }
 

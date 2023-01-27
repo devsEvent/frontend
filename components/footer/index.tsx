@@ -1,15 +1,21 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
 
 import FooterLink from "./footerLink";
 
-import { EenamadIcon, PrimaryAppIcon, ZarinpaalIcon } from "../../public/icons";
+import { ArrowUpIcon, EenamadIcon, PrimaryAppIcon, ZarinpaalIcon } from "../../public/icons";
 import { FacebookIcon, InstagramIcon, LinkedInIcon, TwitterIcon } from "../../public/icons/social";
 
 function Footer() {
+  const ScrollTopHandler = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <footer className="bg-secondary">
-      <div className="mt-20 px-9 py-12 mx-auto max-w-full xl:max-w-[95rem] bg-secondary flex justify-between flex-wrap gap-y-8 footer-background">
+      <div className="mt-20 px-9 py-12 relative mx-auto max-w-full xl:max-w-[95rem] bg-secondary flex justify-between flex-wrap gap-y-8 footer-background">
         <div className="w-full lg:w-fit">
           <Image src={PrimaryAppIcon} alt="website icon" className="w-18" />
           <h2 className="my-4 font-semibold text-[.9rem] lg:text-[1.125rem]">دو اینت برای همه</h2>
@@ -87,6 +93,12 @@ function Footer() {
             <Image src={EenamadIcon} alt="eenamad icon" className="w-12" />
           </div>
         </div>
+        <button
+          onClick={ScrollTopHandler}
+          className="absolute left-3 bottom-3 lg:left-4 lg:bottom-4 bg-primary flex items-center justify-center rounded-full h-12 w-12  lg:h-14 lg:w-14"
+        >
+          <Image src={ArrowUpIcon} alt="" />
+        </button>
       </div>
 
       <div className="px-6 lg:px-9 py-4 lg:py-2 bg-primary flex items-center justify-between flex-col-reverse lg:flex-row gap-y-3">

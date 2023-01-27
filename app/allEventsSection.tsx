@@ -8,9 +8,9 @@ import Header from "../components/elements/header";
 function AllEventsSection() {
   return (
     <section className="mt-14  flex flex-col items-center">
-      <HeaderBox text="همه ایونت ها و دورهمی ها" />
+      <HeaderBox>همه ایونت ها و دورهمی ها</HeaderBox>
 
-      <Header text={"اطلاع رسانی آخرین دورهمی ها و ایونت ها"} />
+      <Header>اطلاع رسانی آخرین دورهمی ها و ایونت ها</Header>
 
       <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 xl:gap-6">
         <EventPreview />

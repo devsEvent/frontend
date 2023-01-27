@@ -8,6 +8,7 @@ import CreateEvent from "./createEvent";
 import HoldingEvent from "./holdingEvent";
 import CreateAccount from "./createAccount";
 import HeaderBox from "../elements/headerBox";
+import Header from "../elements/header";
 
 function SignUpSection() {
   const [selectedComponent, setSelectedComponent] = useState(0);
@@ -25,9 +26,9 @@ function SignUpSection() {
 
   return (
     <section className="mt-14 px-9 flex flex-col items-center">
-      <HeaderBox text="دو ایونت چگونه کار میکند؟" />
+      <HeaderBox>دو ایونت چگونه کار میکند؟</HeaderBox>
 
-      <h1 className="mt-10 text-dark text-[1.5rem] font-semibold">ثبت نام در پلتفرم دو ایونت و ایجاد ایونت</h1>
+      <Header>ثبت نام در پلتفرم دو ایونت و ایجاد ایونت</Header>
 
       <div className="mt-8 w-full flex justify-center items-center flex-wrap gap-4">
         <Button

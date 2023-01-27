@@ -10,6 +10,7 @@
 
 body {
   direction: rtl;
+  scroll-behavior: smooth;
 }
 
 .bg-primary-3 {

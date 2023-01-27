@@ -50,7 +50,7 @@ function Error404() {
         <Banner />
         <Navbar />
       </header>
-      <div className="bg-[url('../public/404-background.svg')] bg-contain bg-left h-[45rem] bg-no-repeat flex flex-col conte items-end justify-center pl-96">
+      <div className="bg-[url('../public/404-background.svg')] bg-contain bg-left h-[45rem] bg-no-repeat flex flex-col conte items-center justify-center pl-96  lg:pl-0 lg:items-end lg:bg-[url('')]">
         <div className="mt-[-12rem]  flex flex-col conte items-center">
           <h1 className="text-[7rem] font-semibold text-white">۴۰۴</h1>
           <h2 className="text-dark text-[1.5rem] font-medium">اوپس .... متاسفانه صفحه مورد نظر یافت نشد</h2>
