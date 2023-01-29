@@ -9,7 +9,6 @@ type Props = {
 };
 
 function Button({ title, index, activeComponent, selectedComponentHandler }: Props) {
-  console.log(index);
   return (
     <button
       className={`w-[46%] lg:w-fit text-[.7rem] lg:text-[1rem] ${styles.primary} py-5 !px-2 lg:!px-14 ${
