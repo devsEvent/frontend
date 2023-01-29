@@ -26,7 +26,7 @@ function Page() {
         <Searchbar />
       </header>
 
-      <div className="mt-6 w-full flex items-start">
+      <div className="mt-6 w-full flex items-start flex-col-reverse lg:flex-row gap-y-4">
         <div className="w-full">
           <section className="px-2 grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4 xl:gap-6 overflow-x-hidden w-full">
             <EventPreview />
@@ -74,11 +74,11 @@ function Page() {
           </div>
         </div>
 
-        <aside className="sticky top-0 p-4 h-full w-[30%] hidden lg:flex flex-col items-center gap-y-4 border-dim-grey border-2 rounded-2xl">
-          <div className="h-[10rem] w-full bg-primary-3 rounded-2xl" />
-          <div className="h-[10rem] w-full bg-primary-3 rounded-2xl" />
-          <div className="h-[10rem] w-full bg-primary-3 rounded-2xl" />
-          <div className="h-[10rem] w-full bg-primary-3 rounded-2xl" />
+        <aside className="lg:sticky top-0 p-4 h-full w-full lg:w-[30%] flex flex-row lg:flex-col items-center gap-4 border-dim-grey border-2 rounded-2xl overflow-x-scroll lg:overflow-x-auto customize-scrollbar snap-x">
+          <div className="h-[10rem] shrink-0 snap-center w-[16rem] lg:w-full bg-primary-3 rounded-2xl" />
+          <div className="h-[10rem] shrink-0 snap-center w-[16rem] lg:w-full bg-primary-3 rounded-2xl" />
+          <div className="h-[10rem] shrink-0 snap-center w-[16rem] lg:w-full bg-primary-3 rounded-2xl" />
+          <div className="h-[10rem] shrink-0 snap-center w-[16rem] lg:w-full bg-primary-3 rounded-2xl" />
         </aside>
       </div>
     </main>

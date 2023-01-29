@@ -7,7 +7,6 @@
   margin: 0;
   padding: 0;
 }
-
 body {
   direction: rtl;
   scroll-behavior: smooth;
@@ -53,28 +52,6 @@ body {
   }
 }
 
-.swiper {
-  width: 100%;
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
-.swiper-slide {
-  background-position: center;
-  background-size: cover;
-  width: 300px;
-  height: 300px;
-}
-
-.swiper-slide img {
-  display: block;
-  width: 100%;
-}
-.mySwiper {
-  height: 100%;
-  width: 100%;
-}
-
 .three-dots {
   overflow: hidden;
   white-space: nowrap;
@@ -102,4 +79,53 @@ body {
   background: url("../public/footer-background.svg");
   background-position: center;
   background-size: contain;
+}
+.customize-scrollbar::-webkit-scrollbar {
+  height: 6px;
+}
+.customize-scrollbar::-webkit-scrollbar-track {
+  width: 4px;
+  background: transparent;
+  overflow: hidden;
+}
+.customize-scrollbar::-webkit-scrollbar-thumb {
+  background: #f1f1f1;
+  border-radius: 5rem;
+}
+.customize-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #684fff;
+}
+.swiper-slide {
+  width: 50%;
+}
+
+.swiper-slide:nth-child(2n) {
+  width: 20%;
+}
+
+.swiper-slide:nth-child(3n) {
+  width: 40%;
+}
+.trans {
+  transform: translateX(-100%);
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  width: 2.5rem !important;
+  height: 2.5rem !important;
+}
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  width: 2.5rem !important;
+  height: 2.5rem !important;
+  color: white !important;
+  font-size: 0.75rem !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background-color: #684fff;
+  font-weight: 900 !important;
+  border-radius: 100%;
+  opacity: 80%;
 }
