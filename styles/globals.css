@@ -68,7 +68,15 @@ body {
   display: -webkit-box;
   text-overflow: ellipsis;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3; /* limit to 2 lines */
+  -webkit-line-clamp: 3; /* limit to 3 lines */
+}
+
+.header-three-dots {
+  overflow: hidden;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2; /* limit to 2 lines */
 }
 .email-settler-background {
   background: url("../public/email-settler-backgorund.svg"), linear-gradient(180deg, #684fff 0%, #b871fe 100%);
@@ -128,4 +136,26 @@ body {
   font-weight: 900 !important;
   border-radius: 100%;
   opacity: 80%;
+}
+
+@media screen and (max-width: 1024px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 1.5rem !important;
+    height: 1.5rem !important;
+  }
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    width: 1.5rem !important;
+    height: 1.5rem !important;
+    color: white !important;
+    font-size: 0.5rem !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    background-color: #684fff;
+    font-weight: 900 !important;
+    border-radius: 100%;
+    opacity: 80%;
+  }
 }

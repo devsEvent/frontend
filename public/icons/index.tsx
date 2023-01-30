@@ -14,5 +14,6 @@ export { default as ZarinpaalIcon } from "./zarinpaal.svg";
 export { default as NotifactionIcon } from "./notifaction.svg";
 export { default as StarOutlineIcon } from "./star-outline.svg";
 export { default as CalendarGrayIcon } from "./calendar-gray.svg";
+export { default as CalendarWhiteIcon } from "./calendar-white.svg";
 export { default as PrimaryAppIcon } from "./primary-app-icon.svg";
 export { default as SearchIconSearchbarIcon } from "./search-icon-searchbar.svg";
