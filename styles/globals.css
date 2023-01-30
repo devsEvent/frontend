@@ -103,6 +103,7 @@ body {
 .customize-scrollbar::-webkit-scrollbar-thumb:hover {
   background: #684fff;
 }
+
 .swiper-slide {
   width: 50%;
 }
@@ -114,7 +115,7 @@ body {
 .swiper-slide:nth-child(3n) {
   width: 40%;
 }
-.trans {
+.translate-full {
   transform: translateX(-100%);
 }
 

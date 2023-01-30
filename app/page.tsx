@@ -9,7 +9,7 @@ import EmailSettler from "../components/emailSettler";
 
 function Page() {
   return (
-    <main>
+    <main className="pt-24">
       <Header />
 
       <AllEventsSection />
