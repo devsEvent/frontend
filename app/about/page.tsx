@@ -64,10 +64,10 @@ function About() {
               حروفچینی دستاوردهای اصلی، و جوابگوی
             </p>
           </div>
-          <Image src={AboutImageSample3} alt="" className="h-full w-full lg:w-[45%]" />
+          <Image src={AboutImageSample3} alt="" className="h-full w-full lg:w-[45%] rounded-3xl" />
         </section>
         <section className="mt-10 flex flex-col lg:flex-row justify-between gap-8">
-          <Image src={AboutImageSample4} alt="" className="h-full w-full lg:w-[45%]" />
+          <Image src={AboutImageSample4} alt="" className="h-full w-full lg:w-[45%] rounded-3xl" />
           <div className="">
             <h2 className="text-primary text-base">شروع در سال 1401</h2>
             <h3 className="mt-5 text-dim-dark text-md md:text-xl">ما در سال 1401 شروع کردیم</h3>

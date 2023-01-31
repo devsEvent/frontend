@@ -1,4 +1,5 @@
 export { default as Logo } from "./logo.svg";
+export { default as AddIcon } from "./add.svg";
 export { default as StarIcon } from "./star.svg";
 export { default as MenuIcon } from "./menu.svg";
 export { default as playIcon } from "./play.svg";
@@ -16,6 +17,7 @@ export { default as CalendarIcon } from "./calendar.svg";
 export { default as ZarinpaalIcon } from "./zarinpaal.svg";
 export { default as NotifactionIcon } from "./notifaction.svg";
 export { default as StarOutlineIcon } from "./star-outline.svg";
+export { default as ArrowOutlineIcon } from "./arrow-outline.svg";
 export { default as ThinLocationIcon } from "./thin-location.svg";
 export { default as CalendarGrayIcon } from "./calendar-gray.svg";
 export { default as PrimaryAppIcon } from "./primary-app-icon.svg";
