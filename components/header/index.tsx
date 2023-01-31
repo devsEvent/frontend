@@ -1,19 +1,18 @@
 "use client";
 
 import React from "react";
+import Link from "next/link";
 import Image from "next/image";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Navigation, EffectCoverflow, Autoplay } from "swiper";
 
 import { Banner1 } from "../../public";
-
 import { CalendarWhiteIcon } from "../../public/icons";
 
 import "swiper/swiper.min.css";
 import "swiper/swiper-bundle.css";
 import "swiper/swiper-bundle.min.css";
-import Link from "next/link";
 
 SwiperCore.use([Navigation, EffectCoverflow, Autoplay]);
 

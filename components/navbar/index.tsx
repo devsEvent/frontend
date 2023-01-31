@@ -72,7 +72,11 @@ function Navbar() {
     return () => {
       window.removeEventListener("scroll", onScroll);
     };
-  });
+  }, []);
+
+  useEffect(() => {
+    setShowNavbar(false);
+  }, [path]);
 
   return (
     <div

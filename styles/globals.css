@@ -138,6 +138,10 @@ body {
   border-radius: 100%;
   opacity: 80%;
 }
+.swiper-comments .swiper-button-next::after,
+.swiper-comments .swiper-button-prev::after {
+  background: rgba(255, 255, 255, 0.1);
+}
 
 @media screen and (max-width: 1024px) {
   .swiper-button-next,

@@ -14,7 +14,7 @@ function EventPreview() {
       <Image src={EventPreviewImage} alt={""} className="w-full rounded-2xl" />
 
       <p className="mt-3 text-dark opacity-50 text-[.9rem] w-full">12 اردیبهشت ۱۴۰۱</p>
-      <h2 className="mt-3 font-semibold text-[1.1rem] three-dots">رویداد تهران با مهدی نظری</h2>
+      <h2 className="mt-3 font-semibold text-[.95rem] lg:text-[1.1rem] three-dots">رویداد تهران با مهدی نظری</h2>
 
       <p className="mt-3 text-dark opacity-50 text-[.9rem] h-[4rem] w-full overflow-hidden">
         لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم لورم
