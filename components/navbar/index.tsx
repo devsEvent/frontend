@@ -110,7 +110,7 @@ function Navbar() {
           showNavbar ? "flex" : "hidden"
         } absolute top-full left-0 w-full h-fit bg-white flex-col z-50 shadow-xl`}
       >
-        <ul className="border">
+        <ul className="border px-4">
           {links.map((item) => (
             <NavLink path={item.path} title={item.title} pathname={path} key={item.path} />
           ))}

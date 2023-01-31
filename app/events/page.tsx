@@ -15,7 +15,7 @@ function Page() {
   };
 
   return (
-    <main className="p-3 mt-20 lg:p-9">
+    <main className="mt-20 p-3 lg:p-9">
       <header className="flex flex-col items-center">
         <HeaderBox>جستجو کنید</HeaderBox>
 

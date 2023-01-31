@@ -6,6 +6,7 @@ import "../styles/globals.css";
 import Banner from "../components/banner";
 import Link from "next/link";
 import { styles } from "../styles";
+import Head from "next/head";
 
 const iranyekan = localFont({
   src: [
@@ -45,12 +46,18 @@ const iranyekan = localFont({
 
 function Error404() {
   return (
-    <div className={`${iranyekan.className} `}>
+    <div className={`${iranyekan.className}`}>
       <header>
         <Banner />
         <Navbar />
       </header>
-      <div className="lg:bg-[url('../public/404-background.svg')] bg-contain bg-left min-h-[45rem] bg-no-repeat flex flex-col conte items-center justify-center lg:items-end">
+
+      <Head>
+        <title>Devs Event • Error 404</title>
+        <link rel="icon" href="/logo.svg" />
+      </Head>
+
+      <div className="mt-20 lg:bg-[url('../public/404-background.svg')] bg-contain bg-left min-h-[45rem] bg-no-repeat flex flex-col conte items-center justify-center lg:items-end">
         <div className="mt-[-12rem] px-4 lg:px-0 lg:pl-24 flex flex-col items-center">
           <h1 className="text-[5rem] lg:text-[7rem] font-semibold text-primary lg:text-white">۴۰۴</h1>
           <h2 className="text-dark text-[.9rem] lg:text-[1.5rem] font-medium">

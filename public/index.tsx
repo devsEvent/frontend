@@ -6,3 +6,8 @@ export { default as EmailSettlerImage } from "./email-settler-image.svg";
 export { default as CommentsBackground } from "./comments-background.svg";
 export { default as CreateAccountHomeImage } from "./create-account-homepage.svg";
 export { default as EmailSettlerBackground } from "./email-settler-backgorund.svg";
+export { default as AboutImageSample } from "./about-image-sample.png";
+export { default as AboutImageSample2 } from "./about-image-sample-2.png";
+export { default as AboutImageSample3 } from "./about-image-sample-3.png";
+export { default as AboutImageSample4 } from "./about-image-sample-4.png";
+export { default as AboutProfileSample4 } from "./about-profile-sample.png";
