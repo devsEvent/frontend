@@ -24,7 +24,7 @@ function About() {
       </header>
 
       <article className="px-2 lg:px-0 mt-10">
-        <div className="flex items-center justify-between h-[10rem] md:h-[20rem] lg:h-[30rem]">
+        <div className="flex items-center justify-between h-[10rem] md:h-[20rem] lg:h-[35rem]">
           <Image src={AboutImageSample2} alt="" className="w-[27.5%] h-full rounded-3xl" />
           <Image src={AboutImageSample} alt="" className="w-[70%] h-full rounded-3xl" />
         </div>

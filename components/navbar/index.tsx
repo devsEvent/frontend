@@ -53,14 +53,14 @@ function Navbar() {
         var currentScrollPos = window.pageYOffset;
 
         if (currentScrollPos == 0) {
-          document.getElementById("navbar").style.top = "2.75rem";
+          document.getElementById("navbar")!.style.top = "2.75rem";
         } else if (prevScrollpos >= currentScrollPos) {
           // certainly this could be coded by useState
           // but this one is more optimzed.
-          document.getElementById("navbar").style.top = "0";
+          document.getElementById("navbar")!.style.top = "0";
           // top 1rem is regular navbar top property so it makes  it visiable.
         } else {
-          document.getElementById("navbar").style.top = "-5rem";
+          document.getElementById("navbar")!.style.top = "-5rem";
         }
         // then preScrollpos will update to current page Y offset
         // to become ready for next scroll eventListner.
