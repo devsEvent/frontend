@@ -18,21 +18,13 @@ export type Event = {
   price: number;
 };
 
-export type reply = {
-  date: string;
-  time: string;
-  fullname: string;
-  logo_image: string;
-  likes_count: string;
-  positions: string[];
-};
-
 export type comment = {
-  time: string;
+  name: string;
   date: string;
-  fullname: string;
-  logo_image: string;
-  likes_count: string;
-  positions: string[];
-  replies: reply[];
+  time: string;
+  text: string;
+  stack: string;
+  logoImage: any;
+  reply?: boolean | null;
+  replies?: comment[];
 };

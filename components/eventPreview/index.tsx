@@ -8,8 +8,8 @@ import { TimeIcon } from "../../public/icons";
 function EventPreview() {
   return (
     <Link
-      href={"/events"}
-      className="px-3 py-4 relative w-full max-w-[20rem] lg:w-[20rem] bg-secondary rounded-2xl shadow-sm"
+      href={"/events/sfdd"}
+      className="px-3 py-4 relative block w-full max-w-[20rem] lg:w-[20rem] bg-secondary rounded-2xl shadow-sm"
     >
       <Image src={EventPreviewImage} alt={""} className="w-full rounded-2xl" />
 

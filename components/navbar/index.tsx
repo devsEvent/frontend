@@ -1,15 +1,16 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import React, { useEffect, useState } from "react";
 
 import { usePathname } from "next/navigation";
 
 import NavLink from "./navLink";
 
-import { LoginIcon, Logo, MenuIcon, NotifactionIcon, SearchIcon } from "../../public/icons";
 import { styles } from "../../styles";
+
+import { LoginIcon, MenuIcon, NotifactionIcon, SearchIcon, PrimaryAppIcon } from "../../public/icons";
 
 function Navbar() {
   const path = usePathname();
@@ -87,7 +88,7 @@ function Navbar() {
         <Image src={MenuIcon} alt="" />
       </button>
 
-      <Image src={Logo} alt="devs event logo" className="w-12 lg:w-14" />
+      <Image src={PrimaryAppIcon} alt="devs event logo" className="w-12 lg:w-14" />
 
       <ul className="hidden lg:flex items-center gap-x-8 h-full">
         {links.map((item) => (

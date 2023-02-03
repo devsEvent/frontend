@@ -91,10 +91,15 @@ body {
 .customize-scrollbar::-webkit-scrollbar {
   height: 6px;
 }
+
 .customize-scrollbar::-webkit-scrollbar-track {
   width: 4px;
   background: transparent;
   overflow: hidden;
+}
+
+.customize-scrollbar::-webkit-scrollbar {
+  width: 3px !important;
 }
 .customize-scrollbar::-webkit-scrollbar-thumb {
   background: #f1f1f1;
@@ -105,7 +110,7 @@ body {
 }
 
 .swiper-slide {
-  width: 50%;
+  width: 20%;
 }
 
 .swiper-slide:nth-child(2n) {
@@ -163,4 +168,8 @@ body {
     border-radius: 100%;
     opacity: 80%;
   }
+}
+.rt {
+  width: 50% !important;
+  background-color: red !important;
 }
