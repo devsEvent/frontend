@@ -1,20 +1,20 @@
 export type Event = {
+  id: number;
   slug: string;
   title: string;
-  sponser: string;
-  Address?: string;
-  location?: string;
-  logo_image: string;
-  event_type: string;
-  description: string;
-  filled_capacity: number;
-  in_progress: boolean;
-  start_time: string;
-  start_day: string;
-  isOnline: boolean;
+  sponser: string; // presenter
+  Media: string[];
+  address?: string;
   catering: string;
   capacity: number;
-  iscash: boolean;
+  start_day: string;
+  start_time: string;
+  avg_rating: number;
+  description: string;
+  event_type: string;
+  location?: string;
+  filled_capacity: number;
+  logo_image: string; // pascal
   price: number;
 };
 

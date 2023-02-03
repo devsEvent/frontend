@@ -3,9 +3,12 @@ import Image from "next/image";
 
 import { CalendarGrayIcon, LocationIcon, PriceIcon, SearchIconSearchbarIcon } from "../../public/icons";
 
-function Searchbar() {
+function Searchbar({ searchHandler }: { searchHandler: (e: any) => void }) {
   return (
-    <form className="mt-12 p-4 w-full flex items-center gap-4 flex-col lg:flex-row rounded-3xl lg:rounded-full border-dim-grey border">
+    <form
+      className="mt-12 p-4 w-full flex items-center gap-4 flex-col lg:flex-row rounded-3xl lg:rounded-full border-dim-grey border"
+      onSubmit={searchHandler}
+    >
       <div className="py-2 px-4 h-full w-full flex items-center gap-x-3 rounded-full border-dim-grey border-2">
         <Image src={SearchIconSearchbarIcon} alt="" className="h-[1.65rem]" />
 
@@ -23,7 +26,7 @@ function Searchbar() {
           className="w-full text-dim-dark outline-none border-none bg-transparent text-[.8rem] lg:text-base text-right"
         >
           <option value="" className="hidden">
-          ...شهر خود را انتخاب کنید
+            ...شهر خود را انتخاب کنید
           </option>
           <option value="" className="bg-white">
             فرقی نمیکنه
@@ -51,8 +54,6 @@ function Searchbar() {
           <option value="" className="hidden">
             قیمت
           </option>
-          <option value="">d</option>
-          <option value="">s</option>
         </select>
       </div>
       <div className="py-2 px-3 h-full w-full flex items-center gap-x-3 rounded-full border-dim-grey border-2">

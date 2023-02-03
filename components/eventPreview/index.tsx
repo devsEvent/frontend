@@ -5,22 +5,20 @@ import Image from "next/image";
 import { EventPreviewImage } from "../../public";
 import { TimeIcon } from "../../public/icons";
 
-function EventPreview() {
+import { Event } from "../../types";
+
+function EventPreview({ event }: { event: Event }) {
   return (
     <Link
-      href={"/events/sfdd"}
-      className="px-3 py-4 relative block w-full max-w-[20rem] lg:w-[20rem] bg-secondary rounded-2xl shadow-sm"
+      href={`/events/${event.slug}`}
+      className="px-3 py-4 relative block w-full max-w-[20rem] lg:w-[20rem] bg-secondary rounded-2xl shadow-sm animation-fade-in"
     >
-      <Image src={EventPreviewImage} alt={""} className="w-full rounded-2xl" />
+      <Image src={EventPreviewImage} alt={event.title} className="w-full rounded-2xl" />
 
-      <p className="mt-3 text-dark opacity-50 text-[.9rem] w-full">12 اردیبهشت ۱۴۰۱</p>
-      <h2 className="mt-3 font-semibold text-[.95rem] lg:text-[1.1rem] three-dots">رویداد تهران با مهدی نظری</h2>
+      <p className="mt-3 text-dark opacity-50 text-[.9rem] w-full">{event.start_day}</p>
+      <h2 className="mt-3 font-semibold text-[.95rem] lg:text-[1.1rem] three-dots">{event.title}</h2>
 
-      <p className="mt-3 text-dark opacity-50 text-[.9rem] h-[4rem] w-full overflow-hidden">
-        لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم لورم
-        ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم لورم ایپسوم لورم ایپسوم ایپسوم لورم ایپسوم لورم
-        ایپسوم لورم ایپسوم لورم ایپسوم لورم لورم ایپسوم لورم ایپسوم
-      </p>
+      <p className="mt-3 text-dark opacity-50 text-[.9rem] h-[4rem] w-full overflow-hidden">{event.description}</p>
       <button className="mt-4 w-full text-left text-[.9rem] text-primary underline">بیشتر</button>
 
       <time className="py-3 px-4 absolute top-6 left-5 bg-primary-3 flex items-center gap-x-3 rounded-full">

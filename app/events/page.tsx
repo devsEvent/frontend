@@ -1,17 +1,67 @@
 "use client";
 
 import React, { useState } from "react";
+
+import useSWR from "swr";
 import ReactPaginate from "react-paginate";
+
 import Searchbar from "./searchbar";
 import Header from "../../components/elements/header";
 import EventPreview from "../../components/eventPreview";
 import HeaderBox from "../../components/elements/headerBox";
+import EventPreviewLoading from "../../components/eventPreview/loading";
+
+import { Event } from "../../types";
+
+const fetcher = (url: string) => fetch(url).then((res) => res.json());
+
+type SWRType = {
+  error: any;
+  data: { result: Event[]; countAll: number };
+};
+
+type formDataType = {
+  [key: string]: string | null;
+};
+
+const DEFAULTFORMDATA: formDataType = {
+  price: null,
+  title: null,
+  location: null,
+};
 
 function Page() {
-  const [selectedPage, setSelectedPage] = useState(1);
+  const [selectedPage, setSelectedPage] = useState<number>(1);
+
+  const [formData, setFormData] = useState(DEFAULTFORMDATA);
+
+  const { data, error }: SWRType = useSWR(
+    `http://localhost:5000/events/search?page=${selectedPage}&limit=10&lcoation=${formData.location}&price=${formData.price}&title=${formData.title}`,
+    fetcher
+  );
 
   const handlePageClick = (event: any) => {
     setSelectedPage(event.selected + 1);
+  };
+
+  const searchHandler = (e: any) => {
+    e.preventDefault();
+
+    const locationInput = e.target[1];
+
+    const priceInput = e.target[2];
+
+    const location = locationInput.selectedIndex === 0 ? null : locationInput[locationInput.selectedIndex].innerHTML;
+
+    const price = priceInput.selectedIndex === 0 ? null : priceInput[priceInput.selectedIndex].innerHTML;
+
+    const newFromData = {
+      price: price,
+      location: location,
+      title: e.target[0].value,
+    };
+
+    setFormData(newFromData);
   };
 
   return (
@@ -23,32 +73,20 @@ function Page() {
           <Header>رویداد ها ، همایش ، کمپین های آموزشی و جشنواره ها</Header>
         </div>
 
-        <Searchbar />
+        <Searchbar searchHandler={searchHandler} />
       </header>
 
       <div className="mt-6 w-full flex items-start flex-col-reverse lg:flex-row gap-y-4">
         <div className="w-full">
           <section className="px-2 grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4 xl:gap-6 overflow-x-hidden w-full">
-            <EventPreview />
-            <EventPreview />
-            <EventPreview />
-            <EventPreview />
-            <EventPreview />
-            <EventPreview />
-            <EventPreview />
-            <EventPreview />
-            <EventPreview />
-            <EventPreview />
-            <EventPreview />
-            <EventPreview />
-            <EventPreview />
-            <EventPreview />
-            <EventPreview />
+            {data
+              ? data.result.map((item: Event, index: number) => <EventPreview event={item} key={index} />)
+              : [...new Array(6)].map((item, index) => <EventPreviewLoading key={index} />)}
           </section>
 
           <div className="flex items-center justify-center lg:block h-20 overflow-x-hidden">
             <ReactPaginate
-              pageCount={3}
+              pageCount={1}
               breakLabel="..."
               nextLabel="بعدی"
               previousLabel="قبلی"

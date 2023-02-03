@@ -4,8 +4,8 @@ import Header from "../components/header";
 import AllEventsSection from "./allEventsSection";
 import BestEventsSection from "./bestEventsSection";
 import SignUpSection from "../components/signUpHome";
-import UserComments from "../components/userComments";
 import EmailSettler from "../components/emailSettler";
+import UserComments from "../components/userComments";
 
 function Page() {
   return (

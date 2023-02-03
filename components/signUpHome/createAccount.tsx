@@ -9,7 +9,7 @@ import { styles } from "../../styles";
 function CreateAccount() {
   return (
     <div className="2xl:px-20 flex items-center justify-between flex-col-reverse lg:flex-row gap-y-8">
-      <div className="flex flex-col items-center gap-y-8">
+      <div className="w-full flex flex-col items-center gap-y-8">
         <h2 className="text-[1.25rem] lg:text-[1.75rem] font-semibold text-center">مزایای عضویت در دو ایونت</h2>
 
         <p className="text-[.8rem] lg:text-[1rem] font-medium">برگزاری دورهمی کاملا آنلاین و امن</p>
