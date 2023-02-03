@@ -1,11 +1,11 @@
-/* eslint-disable @next/next/no-img-element */
-/* eslint-disable jsx-a11y/alt-text */
 "use client";
 
+import React from "react";
 import Image from "next/image";
-import React, { useState } from "react";
+
 import { Swiper, SwiperSlide } from "swiper/react";
-import { EventSampleImage } from "../../../public";
+
+import { EventSampleImage } from "../../public";
 
 function HeaderSlider() {
   return (

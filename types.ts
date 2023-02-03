@@ -28,3 +28,7 @@ export type comment = {
   reply?: boolean | null;
   replies?: comment[];
 };
+
+export type singleEventProps = {
+  params: { eventSlug: string };
+};

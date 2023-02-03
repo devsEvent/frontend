@@ -5,13 +5,13 @@ import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Autoplay } from "swiper";
 
-import EventPreview from "../../../components/eventPreview";
+import EventPreview from "../eventPreview";
 
 import "swiper/swiper.min.css";
 import "swiper/swiper-bundle.css";
 import "swiper/swiper-bundle.min.css";
 import Image from "next/image";
-import { ArrowLeft, ArrowOutlineIcon } from "../../../public/icons";
+import { ArrowLeft, ArrowOutlineIcon } from "../../public/icons";
 
 SwiperCore.use([Autoplay]);
 
