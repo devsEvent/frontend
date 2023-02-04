@@ -1,24 +1,30 @@
 import React from "react";
 
 import Header from "../components/header";
-import AllEventsSection from "./allEventsSection";
-import BestEventsSection from "./bestEventsSection";
 import SignUpSection from "../components/signUpHome";
 import EmailSettler from "../components/emailSettler";
 import UserComments from "../components/userComments";
+import AllEventsSection from "../components/homeEventsSections/allEventsSection";
+import BestEventsSection from "../components/homeEventsSections/bestEventsSection";
 
-function Page() {
+import { getEvents } from "../modules/getEvents";
+
+async function Page() {
+  const latestEvents = await getEvents(`${process.env.SERVER_URL}/events?&page=1&limit=8`);
+
+  const bestEvents = await getEvents(`${process.env.SERVER_URL}/events?&page=1&limit=8`);
+
   return (
     <main className="pt-24">
       <Header />
 
-      <AllEventsSection />
+      <AllEventsSection events={latestEvents} />
 
       <UserComments />
 
       <SignUpSection />
 
-      <BestEventsSection />
+      <BestEventsSection events={bestEvents} />
 
       <EmailSettler />
     </main>

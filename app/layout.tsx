@@ -1,8 +1,8 @@
 import Banner from "../components/banner";
 import Navbar from "../components/navbar";
+import Footer from "../components/footer";
 
 import localFont from "@next/font/local";
-import Footer from "../components/footer";
 
 import "../styles/globals.css";
 

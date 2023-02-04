@@ -4,23 +4,28 @@ import Image from "next/image";
 import { PresenterLogoSample } from "../../public";
 import { PeopleRedIcon } from "../../public/icons";
 
-function Sidebar() {
-  const price: number = 125000;
+type Props = {
+  price: number | undefined;
+  sponsor: string | undefined;
+  logoImage: string | undefined;
+  filledCapacity: number | undefined;
+};
 
+function Sidebar({ price, sponsor, logoImage, filledCapacity }: any) {
   return (
     <aside className="w-full py-12 px-4 lg:w-[24%] h-full flex items-center flex-col gap-y-3 border rounded-2xl">
-      <Image src={PresenterLogoSample} alt="" className="w-20 h-20 object-cover rounded-full" />
+      <Image src={PresenterLogoSample} alt="" className="w-20 h-20 object-cover rounded-full" width={80} height={80} />
 
       <h2 className="text-dim-dark text-sm">برگزار کننده | حامی رویداد</h2>
 
-      <h1 className="w-full text-lg font-medium text-center three-dots">همیار آکادمی</h1>
+      <h1 className="w-full text-lg font-medium text-center three-dots">{sponsor}</h1>
 
       <div className="mt-20 p-3 w-[16rem] flex items-center justify-between text-tomato text-sm border rounded-xl">
         <div className="flex items-center gap-x-3">
           <Image src={PeopleRedIcon} alt="" className="w-4" />
           <span>تکمیل شده</span>
         </div>
-        <span>۲۸۵ نفر</span>
+        <span>{filledCapacity} نفر</span>
       </div>
 
       <div className="p-3 w-[16rem] flex items-center justify-between">

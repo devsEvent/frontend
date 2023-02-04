@@ -101,7 +101,7 @@ function Navbar() {
 
         <Image src={NotifactionIcon} alt="notification icon" className="w-12" />
 
-        <Link href="/login" className={`${styles.secondary} px-4 hidden md:flex items-center gap-x-3 `}>
+        <Link href="/login" className={`${styles.secondary} px-4 py-2 hidden md:flex items-center gap-x-3 `}>
           <span className="text-white">ورود</span>
           <Image src={LoginIcon} alt="login icon" className="w-5" />
         </Link>

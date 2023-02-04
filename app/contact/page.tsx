@@ -1,8 +1,10 @@
 import Image from "next/image";
 import React from "react";
+
 import Header from "../../components/elements/header";
 import HeaderBox from "../../components/elements/headerBox";
-import { EmailIcon, MobileIcon, SupportIcon, ThinLocationIcon } from "../../public/icons";
+
+import { MobileIcon, SupportIcon } from "../../public/icons";
 
 function Contact() {
   return (
@@ -76,9 +78,7 @@ function Contact() {
             className="px-3 py-4 w-full min-h-[8rem] text-dark placeholder:text-dim-dark rounded-2xl border outline-none"
             placeholder="پیام خود را بنویسید...."
           ></textarea>
-          <button type="submit" className="mt-4 px-3 py-4 w-full bg-primary text-white rounded-2xl outline-none">
-            ارسال
-          </button>
+          <button className="mt-4 px-3 py-4 w-full bg-primary text-white rounded-2xl outline-none">ارسال</button>
         </form>
       </section>
     </main>

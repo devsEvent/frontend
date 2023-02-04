@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import Image from "next/image";
 
 import Detail from "./detail";
@@ -16,27 +17,38 @@ import {
   TimerIcon,
 } from "../../public/icons";
 
-function Details() {
+type Props = {
+  title: string;
+  starDay: string;
+  starTime: string;
+  description: string;
+  price: number | undefined;
+  address: string | undefined;
+  location: string | undefined;
+  catering: string | undefined;
+  capacity: number | undefined;
+};
+
+function Details({ title, address, location, starDay, catering, starTime, capacity, price, description }: Props) {
   const details = [
-    { title: "تهران ; میدان آزادی", imageIcon: LocationWhiteIcon },
     {
-      title: "رایگان",
+      title: `${price && price !== 0 ? `${price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")} تومان` : "رایگان"}`,
       imageIcon: DollarsIcon,
     },
     {
-      title: "یک‌شنبه ۱۳ آذر ۱۴۰۱",
+      title: starDay,
       imageIcon: CalendarWhiteIcon,
     },
     {
-      title: "ساعت ۰۸:۰۰ - ۱۳:۰۰",
+      title: starTime,
       imageIcon: TimerIcon,
     },
     {
-      title: "به همراه پذیرایی ناهار و شام",
+      title: `${catering ? catering : "-"}`,
       imageIcon: FoodIcon,
     },
     {
-      title: "ظرفیت ۲۰۵ نفر",
+      title: `ظرفیت ${capacity} نفر`,
       imageIcon: PeopleIcon,
     },
   ];
@@ -68,11 +80,25 @@ function Details() {
         </div>
 
         <div className="w-full md:w-[50%] flex flex-col">
-          <h1 className="pl-10 w-full text-dim-dark text-[.8rem] md:text-lg three-dots">
-            رویداد فرانت چپتر میزبانی برج میلاد تهران
-          </h1>
+          <h1 className="pl-10 w-full text-dim-dark text-[.8rem] md:text-lg three-dots">{title}</h1>
 
           <ul className="mt-3 h-full flex flex-col justify-between bg-opacity-50">
+            <li className="mt-4 lg:mt-6 flex items-center gap-x-3 lg:gap-x-4">
+              <div className="p-1 lg:p-[.35rem] bg-primary rounded-lg rounded-bl-none">
+                <Image src={LocationWhiteIcon} alt="" />
+              </div>
+
+              <Link
+                href={location ? location : ""}
+                target="_blank"
+                className={`lg:pl-10 w-full text-[.8rem] lg:text-base text-dark three-dots ${
+                  location && "underline underline-offset-2"
+                }`}
+              >
+                {address}
+              </Link>
+            </li>
+
             {details.map((item, index) => (
               <Detail item={item} key={index} />
             ))}
@@ -83,11 +109,7 @@ function Details() {
       <div className="pt-8">
         <h4 className="text-dark font-semibold text-xl">توضیحات</h4>
         <p className="mt-3 pl-3 max-h-[20rem] lg:max-h-[14rem] text-dim-dark text-sm leading-8 overflow-auto customize-scrollbar customize-scrollbar-thin">
-          لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون
-          بلکه روزنامه و مجله لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک
-          است، چاپگرها و متون بلکه روزنامه و مجله لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
-          استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم
-          از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله
+          {description}
         </p>
       </div>
 

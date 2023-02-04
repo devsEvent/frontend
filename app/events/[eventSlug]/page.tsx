@@ -9,22 +9,44 @@ import Sidebar from "../../../components/singleEvent/sidebar";
 import Details from "../../../components/singleEvent/details";
 import ADS from "../../../components/singleEvent/ads";
 
-import { singleEventProps } from "../../../types";
+import { getEvents } from "../../../modules/getEvents";
+
+import { Event, singleEventProps } from "../../../types";
 
 import { SampleAvatar } from "../../../public";
 
-function SingleEvent({ params }: singleEventProps) {
+async function SingleEvent({ params }: singleEventProps) {
+  const relatedEvents = await getEvents(`${process.env.SERVER_URL}/events?page=1&limit=12&slug=${params.eventSlug}`);
+
+  const event: Event = await getEvents(`${process.env.SERVER_URL}/events/${params.eventSlug}`);
+
   return (
     <main className="mt-20 flex items-center flex-col">
       <header className="p-4 lg:p-9 flex items-center flex-col">
         <HeaderBox>جزییات رویداد</HeaderBox>
+
         <Header>هر آنچه که لازمه در مورد رویداد در حال برگزاری بدانید ...</Header>
       </header>
 
       <div className="mb-8 p-4 md:p-9 w-full flex md:justify-between items-center xl:items-start gap-y-4 flex-col xl:flex-row">
-        <Details />
+        <Details
+          title={event.title}
+          price={event.price}
+          address={event.address}
+          starDay={event.start_day}
+          catering={event.catering}
+          location={event.location}
+          capacity={event.capacity}
+          starTime={event.start_time}
+          description={event.description}
+        />
 
-        <Sidebar />
+        <Sidebar
+          price={event.price}
+          sponsor={event.sponsor}
+          logoImage={event.logo_image}
+          filledCapacity={event.field_capacity}
+        />
       </div>
 
       <ADS />
@@ -73,10 +95,20 @@ function SingleEvent({ params }: singleEventProps) {
           <Header>برترین دورهمی ها و ایونت ها</Header>
         </header>
 
-        <SingleEventSlider />
+        <SingleEventSlider relatedEvents={relatedEvents} />
       </section>
     </main>
   );
 }
 
 export default SingleEvent;
+
+export async function generateStaticParams() {
+  const res = await fetch("http://localhost:5000/events?page=1&limit=100");
+
+  const { result }: { result: Event[] } = await res.json();
+
+  return result.map((item) => ({
+    eventSlug: item.slug.toString(),
+  }));
+}

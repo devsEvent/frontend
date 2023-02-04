@@ -1,16 +1,15 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
+import Image from "next/image";
 import React, { useState } from "react";
 
 import Header from "../../components/elements/header";
 import HeaderBox from "../../components/elements/headerBox";
 import PrimaryButton from "../../components/elements/primaryButton";
+import { AndAArrayContentType, QAndAArrayContent } from "./questions";
 
 import { AddIcon, ArrowOutlineIcon, SearchIcon } from "../../public/icons";
-
-import { AndAArrayContentType, QAndAArrayContent } from "./questions";
 
 function QAndA() {
   const [selectedField, setSelectedField] = useState(0);
@@ -54,7 +53,7 @@ function QAndA() {
             <Image
               src={AddIcon}
               alt=""
-              className={`${selectedField === index ? "invert-0" : "invert-[1] opacity-75"}`}
+              className={`${selectedField === index ? "invert-0" : "invert-[1] opacity-20"}`}
             />
             <h2>{item}</h2>
           </button>

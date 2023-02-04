@@ -1,21 +1,24 @@
 "use client";
 
+import Image from "next/image";
 import React, { useState } from "react";
 
-import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Autoplay } from "swiper";
+import { Swiper, SwiperSlide } from "swiper/react";
 
 import EventPreview from "../eventPreview";
+
+import { ArrowLeft } from "../../public/icons";
+
+import { Event } from "../../types";
 
 import "swiper/swiper.min.css";
 import "swiper/swiper-bundle.css";
 import "swiper/swiper-bundle.min.css";
-import Image from "next/image";
-import { ArrowLeft, ArrowOutlineIcon } from "../../public/icons";
 
 SwiperCore.use([Autoplay]);
 
-function SingleEventSlider() {
+function SingleEventSlider({ relatedEvents }: { relatedEvents: Event[] }) {
   const [swipe, setSwipe] = useState<any>();
   const [swipeIndex, setSwipeIndex] = useState<number>(0);
 
@@ -44,30 +47,16 @@ function SingleEventSlider() {
           }}
           onBeforeInit={(swipper) => setSwipe(swipper)}
         >
-          <SwiperSlide className="w-full flex items-center justify-center">
-            <EventPreview />
-          </SwiperSlide>
-          <SwiperSlide className="w-full flex items-center justify-center">
-            <EventPreview />
-          </SwiperSlide>
-          <SwiperSlide className="w-full flex items-center justify-center">
-            <EventPreview />
-          </SwiperSlide>
-          <SwiperSlide className="w-full flex items-center justify-center">
-            <EventPreview />
-          </SwiperSlide>
-          <SwiperSlide className="w-full flex items-center justify-center">
-            <EventPreview />
-          </SwiperSlide>
-          <SwiperSlide className="w-full flex items-center justify-center">
-            <EventPreview />
-          </SwiperSlide>
-          <SwiperSlide className="w-full flex items-center justify-center">
-            <EventPreview />
-          </SwiperSlide>
-          <SwiperSlide className="w-full flex items-center justify-center">
-            <EventPreview />
-          </SwiperSlide>
+          {relatedEvents.map((item, index) => (
+            <SwiperSlide className="w-full flex items-center justify-center" key={index}>
+              <EventPreview
+                slug={item.slug}
+                title={item.title}
+                startDay={item.start_day}
+                description={item.description}
+              />
+            </SwiperSlide>
+          ))}
         </Swiper>
 
         <div className="mt-5 h-10 flex items-center justify-center lg:justify-end gap-x-3">

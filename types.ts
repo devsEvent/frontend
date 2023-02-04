@@ -1,21 +1,22 @@
 export type Event = {
-  id: number;
+  id?: number;
   slug: string;
   title: string;
-  sponser: string; // presenter
-  Media: string[];
+  sponsor?: string; // presenter
+  Media?: string[];
   address?: string;
-  catering: string;
-  capacity: number;
+  catering?: string;
+  capacity?: number;
   start_day: string;
   start_time: string;
-  avg_rating: number;
+  avg_rating?: number;
   description: string;
-  event_type: string;
+  event_type?: string;
   location?: string;
-  filled_capacity: number;
-  logo_image: string; // pascal
-  price: number;
+  filled_capacity?: number;
+  field_capacity?: number; // filled_cpacity
+  logo_image?: string; // pascal
+  price?: number;
 };
 
 export type comment = {

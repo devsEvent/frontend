@@ -1,11 +1,11 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import useSWR from "swr";
 import ReactPaginate from "react-paginate";
 
-import Searchbar from "./searchbar";
+import Searchbar from "../../components/searchbar";
 import Header from "../../components/elements/header";
 import EventPreview from "../../components/eventPreview";
 import HeaderBox from "../../components/elements/headerBox";
@@ -33,12 +33,21 @@ const DEFAULTFORMDATA: formDataType = {
 function Page() {
   const [selectedPage, setSelectedPage] = useState<number>(1);
 
+  const [countPage, setCountPage] = useState<number>(1);
+
   const [formData, setFormData] = useState(DEFAULTFORMDATA);
 
-  const { data, error }: SWRType = useSWR(
-    `http://localhost:5000/events/search?page=${selectedPage}&limit=10&lcoation=${formData.location}&price=${formData.price}&title=${formData.title}`,
-    fetcher
-  );
+  const url = `http://localhost:5000/events/search?page=${selectedPage}&limit=10&lcoation=${formData.location}&price=${formData.price}&title=${formData.title}`;
+
+  const { data }: SWRType = useSWR(url, fetcher);
+
+  useEffect(() => {
+    if (data) {
+      const { countAll }: { countAll: number } = data;
+
+      setCountPage(countAll < 10 ? 1 : countAll / 10);
+    }
+  }, [data]);
 
   const handlePageClick = (event: any) => {
     setSelectedPage(event.selected + 1);
@@ -47,20 +56,19 @@ function Page() {
   const searchHandler = (e: any) => {
     e.preventDefault();
 
-    const locationInput = e.target[1];
+    const location = e.target[1].value;
 
-    const priceInput = e.target[2];
+    const price = e.target[2].value;
 
-    const location = locationInput.selectedIndex === 0 ? null : locationInput[locationInput.selectedIndex].innerHTML;
-
-    const price = priceInput.selectedIndex === 0 ? null : priceInput[priceInput.selectedIndex].innerHTML;
+    const basis = e.target[3].value;
 
     const newFromData = {
       price: price,
+      basis: basis,
       location: location,
       title: e.target[0].value,
     };
-
+    console.log(newFromData);
     setFormData(newFromData);
   };
 
@@ -80,13 +88,21 @@ function Page() {
         <div className="w-full">
           <section className="px-2 grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4 xl:gap-6 overflow-x-hidden w-full">
             {data
-              ? data.result.map((item: Event, index: number) => <EventPreview event={item} key={index} />)
+              ? data.result.map((item: Event, index: number) => (
+                  <EventPreview
+                    slug={item.slug}
+                    title={item.title}
+                    startDay={item.start_day}
+                    description={item.description}
+                    key={index}
+                  />
+                ))
               : [...new Array(6)].map((item, index) => <EventPreviewLoading key={index} />)}
           </section>
 
           <div className="flex items-center justify-center lg:block h-20 overflow-x-hidden">
             <ReactPaginate
-              pageCount={1}
+              pageCount={countPage}
               breakLabel="..."
               nextLabel="بعدی"
               previousLabel="قبلی"

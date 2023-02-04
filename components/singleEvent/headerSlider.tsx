@@ -3,9 +3,12 @@
 import React from "react";
 import Image from "next/image";
 
+import SwiperCore, { Autoplay, Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import { EventSampleImage } from "../../public";
+
+SwiperCore.use([Autoplay, Navigation]);
 
 function HeaderSlider() {
   return (
