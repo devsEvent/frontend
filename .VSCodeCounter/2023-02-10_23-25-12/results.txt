@@ -1,0 +1,195 @@
+Date : 2023-02-10 23:25:12
+Directory : c:\Vito\dev-events\frontend
+Total : 124 files,  10149 codes, 20 comments, 549 blanks, all 10718 lines
+
+Languages
++--------------------+------------+------------+------------+------------+------------+
+| language           | files      | code       | comment    | blank      | total      |
++--------------------+------------+------------+------------+------------+------------+
+| JSON               |          2 |      7,026 |          0 |          2 |      7,028 |
+| TypeScript JSX     |         57 |      1,927 |         18 |        425 |      2,370 |
+| XML                |         51 |        517 |          0 |         51 |        568 |
+| TypeScript         |          6 |        356 |          0 |         13 |        369 |
+| CSS                |          1 |        183 |          0 |         21 |        204 |
+| Markdown           |          2 |         80 |          0 |         31 |        111 |
+| JavaScript         |          3 |         32 |          2 |          4 |         38 |
+| JSON with Comments |          2 |         28 |          0 |          2 |         30 |
++--------------------+------------+------------+------------+------------+------------+
+
+Directories
++----------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                       | files      | code       | comment    | blank      | total      |
++----------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                          |        124 |     10,149 |         20 |        549 |     10,718 |
+| . (Files)                                                                  |          9 |      7,172 |          2 |         40 |      7,214 |
+| app                                                                        |         14 |        733 |         12 |        129 |        874 |
+| app (Files)                                                                |          3 |         52 |          0 |         20 |         72 |
+| app\Q&A                                                                    |          3 |        262 |          2 |         20 |        284 |
+| app\about                                                                  |          2 |         95 |          0 |         12 |        107 |
+| app\contact                                                                |          2 |         89 |          0 |         21 |        110 |
+| app\events                                                                 |          4 |        235 |         10 |         56 |        301 |
+| app\events (Files)                                                         |          2 |        121 |         10 |         31 |        162 |
+| app\events\[eventSlug]                                                     |          2 |        114 |          0 |         25 |        139 |
+| components                                                                 |         40 |      1,351 |          6 |        286 |      1,643 |
+| components\about                                                           |          1 |         29 |          0 |          5 |         34 |
+| components\elements                                                        |          2 |         10 |          0 |          6 |         16 |
+| components\eventPreview                                                    |          3 |         58 |          0 |         18 |         76 |
+| components\events                                                          |          4 |        179 |          0 |         23 |        202 |
+| components\events (Files)                                                  |          1 |         12 |          0 |          3 |         15 |
+| components\events\searchbar                                                |          3 |        167 |          0 |         20 |        187 |
+| components\home                                                            |         15 |        434 |          0 |        105 |        539 |
+| components\home (Files)                                                    |          3 |         98 |          0 |         25 |        123 |
+| components\home\comments                                                   |          3 |         94 |          0 |         23 |        117 |
+| components\home\header                                                     |          3 |        121 |          0 |         21 |        142 |
+| components\home\signUp                                                     |          6 |        121 |          0 |         36 |        157 |
+| components\layout                                                          |          6 |        288 |          6 |         56 |        350 |
+| components\layout\banner                                                   |          2 |         53 |          0 |         12 |         65 |
+| components\layout\footer                                                   |          2 |        115 |          0 |         19 |        134 |
+| components\layout\navbar                                                   |          2 |        120 |          6 |         25 |        151 |
+| components\singleEvent                                                     |          9 |        353 |          0 |         73 |        426 |
+| components\singleEvent (Files)                                             |          6 |        189 |          0 |         43 |        232 |
+| components\singleEvent\comment                                             |          1 |         46 |          0 |          9 |         55 |
+| components\singleEvent\details                                             |          2 |        118 |          0 |         21 |        139 |
+| modules                                                                    |          1 |         12 |          0 |          4 |         16 |
+| pages                                                                      |          1 |         41 |          0 |          8 |         49 |
+| public                                                                     |         54 |        605 |          0 |         55 |        660 |
+| public (Files)                                                             |          8 |        306 |          0 |          8 |        314 |
+| public\fonts                                                               |          1 |         36 |          0 |          2 |         38 |
+| public\icons                                                               |         45 |        263 |          0 |         45 |        308 |
+| public\icons (Files)                                                       |         36 |        226 |          0 |         36 |        262 |
+| public\icons\social                                                        |          9 |         37 |          0 |          9 |         46 |
+| store                                                                      |          1 |          1 |          0 |          0 |          1 |
+| styles                                                                     |          2 |        187 |          0 |         22 |        209 |
+| types                                                                      |          2 |         47 |          0 |          5 |         52 |
++----------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++----------------------------------------------------------------------------+--------------------+------------+------------+------------+------------+
+| filename                                                                   | language           | code       | comment    | blank      | total      |
++----------------------------------------------------------------------------+--------------------+------------+------------+------------+------------+
+| c:\Vito\dev-events\frontend\.eslintrc.json                                 | JSON with Comments |          3 |          0 |          1 |          4 |
+| c:\Vito\dev-events\frontend\README.md                                      | Markdown           |         79 |          0 |         31 |        110 |
+| c:\Vito\dev-events\frontend\app\Q&A\head.tsx                               | TypeScript JSX     |          9 |          0 |          1 |         10 |
+| c:\Vito\dev-events\frontend\app\Q&A\page.tsx                               | TypeScript JSX     |         85 |          2 |         17 |        104 |
+| c:\Vito\dev-events\frontend\app\Q&A\questions.ts                           | TypeScript         |        168 |          0 |          2 |        170 |
+| c:\Vito\dev-events\frontend\app\about\head.tsx                             | TypeScript JSX     |          9 |          0 |          1 |         10 |
+| c:\Vito\dev-events\frontend\app\about\page.tsx                             | TypeScript JSX     |         86 |          0 |         11 |         97 |
+| c:\Vito\dev-events\frontend\app\contact\head.tsx                           | TypeScript JSX     |          9 |          0 |          1 |         10 |
+| c:\Vito\dev-events\frontend\app\contact\page.tsx                           | TypeScript JSX     |         80 |          0 |         20 |        100 |
+| c:\Vito\dev-events\frontend\app\events\[eventSlug]\head.tsx                | TypeScript JSX     |          8 |          0 |          1 |          9 |
+| c:\Vito\dev-events\frontend\app\events\[eventSlug]\page.tsx                | TypeScript JSX     |        106 |          0 |         24 |        130 |
+| c:\Vito\dev-events\frontend\app\events\head.tsx                            | TypeScript JSX     |          9 |          0 |          1 |         10 |
+| c:\Vito\dev-events\frontend\app\events\page.tsx                            | TypeScript JSX     |        112 |         10 |         30 |        152 |
+| c:\Vito\dev-events\frontend\app\head.tsx                                   | TypeScript JSX     |          9 |          0 |          1 |         10 |
+| c:\Vito\dev-events\frontend\app\layout.tsx                                 | TypeScript JSX     |         20 |          0 |          7 |         27 |
+| c:\Vito\dev-events\frontend\app\page.tsx                                   | TypeScript JSX     |         23 |          0 |         12 |         35 |
+| c:\Vito\dev-events\frontend\components\about\person.tsx                    | TypeScript JSX     |         29 |          0 |          5 |         34 |
+| c:\Vito\dev-events\frontend\components\elements\header.tsx                 | TypeScript JSX     |          5 |          0 |          3 |          8 |
+| c:\Vito\dev-events\frontend\components\elements\headerBox.tsx              | TypeScript JSX     |          5 |          0 |          3 |          8 |
+| c:\Vito\dev-events\frontend\components\eventPreview\eventsLoading.tsx      | TypeScript JSX     |         12 |          0 |          4 |         16 |
+| c:\Vito\dev-events\frontend\components\eventPreview\index.tsx              | TypeScript JSX     |         32 |          0 |          9 |         41 |
+| c:\Vito\dev-events\frontend\components\eventPreview\loading.tsx            | TypeScript JSX     |         14 |          0 |          5 |         19 |
+| c:\Vito\dev-events\frontend\components\events\searchbar\index.tsx          | TypeScript JSX     |         56 |          0 |         13 |         69 |
+| c:\Vito\dev-events\frontend\components\events\searchbar\inputOptions.ts    | TypeScript         |         97 |          0 |          3 |        100 |
+| c:\Vito\dev-events\frontend\components\events\searchbar\selectInput.tsx    | TypeScript JSX     |         14 |          0 |          4 |         18 |
+| c:\Vito\dev-events\frontend\components\events\sidebar.tsx                  | TypeScript JSX     |         12 |          0 |          3 |         15 |
+| c:\Vito\dev-events\frontend\components\home\bestEvents.tsx                 | TypeScript JSX     |         35 |          0 |          9 |         44 |
+| c:\Vito\dev-events\frontend\components\home\comments\Slide.tsx             | TypeScript JSX     |         32 |          0 |         11 |         43 |
+| c:\Vito\dev-events\frontend\components\home\comments\index.tsx             | TypeScript JSX     |         43 |          0 |          8 |         51 |
+| c:\Vito\dev-events\frontend\components\home\comments\slider.tsx            | TypeScript JSX     |         19 |          0 |          4 |         23 |
+| c:\Vito\dev-events\frontend\components\home\emailSettler.tsx               | TypeScript JSX     |         28 |          0 |          7 |         35 |
+| c:\Vito\dev-events\frontend\components\home\header\index.tsx               | TypeScript JSX     |         44 |          0 |          7 |         51 |
+| c:\Vito\dev-events\frontend\components\home\header\slide.tsx               | TypeScript JSX     |         43 |          0 |          8 |         51 |
+| c:\Vito\dev-events\frontend\components\home\header\slider.tsx              | TypeScript JSX     |         34 |          0 |          6 |         40 |
+| c:\Vito\dev-events\frontend\components\home\latestEvents.tsx               | TypeScript JSX     |         35 |          0 |          9 |         44 |
+| c:\Vito\dev-events\frontend\components\home\signUp\button.tsx              | TypeScript JSX     |         21 |          0 |          5 |         26 |
+| c:\Vito\dev-events\frontend\components\home\signUp\confirmCode.tsx         | TypeScript JSX     |          5 |          0 |          3 |          8 |
+| c:\Vito\dev-events\frontend\components\home\signUp\createAccount.tsx       | TypeScript JSX     |         30 |          0 |         11 |         41 |
+| c:\Vito\dev-events\frontend\components\home\signUp\createEvent.tsx         | TypeScript JSX     |          5 |          0 |          3 |          8 |
+| c:\Vito\dev-events\frontend\components\home\signUp\holdingEvent.tsx        | TypeScript JSX     |          5 |          0 |          3 |          8 |
+| c:\Vito\dev-events\frontend\components\home\signUp\index.tsx               | TypeScript JSX     |         55 |          0 |         11 |         66 |
+| c:\Vito\dev-events\frontend\components\layout\banner\index.tsx             | TypeScript JSX     |         27 |          0 |          8 |         35 |
+| c:\Vito\dev-events\frontend\components\layout\banner\language.tsx          | TypeScript JSX     |         26 |          0 |          4 |         30 |
+| c:\Vito\dev-events\frontend\components\layout\footer\footerLink.tsx        | TypeScript JSX     |         10 |          0 |          3 |         13 |
+| c:\Vito\dev-events\frontend\components\layout\footer\index.tsx             | TypeScript JSX     |        105 |          0 |         16 |        121 |
+| c:\Vito\dev-events\frontend\components\layout\navbar\index.tsx             | TypeScript JSX     |         97 |          6 |         21 |        124 |
+| c:\Vito\dev-events\frontend\components\layout\navbar\navLink.tsx           | TypeScript JSX     |         23 |          0 |          4 |         27 |
+| c:\Vito\dev-events\frontend\components\singleEvent\ads.tsx                 | TypeScript JSX     |         20 |          0 |          5 |         25 |
+| c:\Vito\dev-events\frontend\components\singleEvent\comment\index.tsx       | TypeScript JSX     |         46 |          0 |          9 |         55 |
+| c:\Vito\dev-events\frontend\components\singleEvent\controlers.tsx          | TypeScript JSX     |         25 |          0 |          5 |         30 |
+| c:\Vito\dev-events\frontend\components\singleEvent\details\detail.tsx      | TypeScript JSX     |         13 |          0 |          4 |         17 |
+| c:\Vito\dev-events\frontend\components\singleEvent\details\details.tsx     | TypeScript JSX     |        105 |          0 |         17 |        122 |
+| c:\Vito\dev-events\frontend\components\singleEvent\headerSlider.tsx        | TypeScript JSX     |         26 |          0 |          7 |         33 |
+| c:\Vito\dev-events\frontend\components\singleEvent\newComment.tsx          | TypeScript JSX     |         15 |          0 |          4 |         19 |
+| c:\Vito\dev-events\frontend\components\singleEvent\relatedEventsSlider.tsx | TypeScript JSX     |         69 |          0 |         12 |         81 |
+| c:\Vito\dev-events\frontend\components\singleEvent\sidebar.tsx             | TypeScript JSX     |         34 |          0 |         10 |         44 |
+| c:\Vito\dev-events\frontend\logo.svg                                       | XML                |          7 |          0 |          1 |          8 |
+| c:\Vito\dev-events\frontend\modules\getEvents.tsx                          | TypeScript JSX     |         12 |          0 |          4 |         16 |
+| c:\Vito\dev-events\frontend\next.config.js                                 | JavaScript         |          6 |          1 |          2 |          9 |
+| c:\Vito\dev-events\frontend\package-lock.json                              | JSON               |      6,994 |          0 |          1 |      6,995 |
+| c:\Vito\dev-events\frontend\package.json                                   | JSON               |         32 |          0 |          1 |         33 |
+| c:\Vito\dev-events\frontend\pages\404.tsx                                  | TypeScript JSX     |         41 |          0 |          8 |         49 |
+| c:\Vito\dev-events\frontend\postcss.config.js                              | JavaScript         |          6 |          0 |          1 |          7 |
+| c:\Vito\dev-events\frontend\public\404-background.svg                      | XML                |         27 |          0 |          1 |         28 |
+| c:\Vito\dev-events\frontend\public\comments-background.svg                 | XML                |         13 |          0 |          1 |         14 |
+| c:\Vito\dev-events\frontend\public\create-account-homepage.svg             | XML                |         74 |          0 |          1 |         75 |
+| c:\Vito\dev-events\frontend\public\email-settler-backgorund.svg            | XML                |         28 |          0 |          1 |         29 |
+| c:\Vito\dev-events\frontend\public\email-settler-image.svg                 | XML                |        128 |          0 |          1 |        129 |
+| c:\Vito\dev-events\frontend\public\fonts\index.ts                          | TypeScript         |         36 |          0 |          2 |         38 |
+| c:\Vito\dev-events\frontend\public\footer-background.svg                   | XML                |         13 |          0 |          1 |         14 |
+| c:\Vito\dev-events\frontend\public\icons\add.svg                           | XML                |          3 |          0 |          1 |          4 |
+| c:\Vito\dev-events\frontend\public\icons\arrow-left.svg                    | XML                |          3 |          0 |          1 |          4 |
+| c:\Vito\dev-events\frontend\public\icons\arrow-outline.svg                 | XML                |          3 |          0 |          1 |          4 |
+| c:\Vito\dev-events\frontend\public\icons\arrow-up.svg                      | XML                |          4 |          0 |          1 |          5 |
+| c:\Vito\dev-events\frontend\public\icons\calendar-gray.svg                 | XML                |          4 |          0 |          1 |          5 |
+| c:\Vito\dev-events\frontend\public\icons\calendar-white.svg                | XML                |          4 |          0 |          1 |          5 |
+| c:\Vito\dev-events\frontend\public\icons\calendar.svg                      | XML                |         14 |          0 |          1 |         15 |
+| c:\Vito\dev-events\frontend\public\icons\dollars.svg                       | XML                |          4 |          0 |          1 |          5 |
+| c:\Vito\dev-events\frontend\public\icons\eenamad.svg                       | XML                |          9 |          0 |          1 |         10 |
+| c:\Vito\dev-events\frontend\public\icons\food.svg                          | XML                |          3 |          0 |          1 |          4 |
+| c:\Vito\dev-events\frontend\public\icons\index.tsx                         | TypeScript JSX     |         35 |          0 |          1 |         36 |
+| c:\Vito\dev-events\frontend\public\icons\location-white.svg                | XML                |          4 |          0 |          1 |          5 |
+| c:\Vito\dev-events\frontend\public\icons\location.svg                      | XML                |          4 |          0 |          1 |          5 |
+| c:\Vito\dev-events\frontend\public\icons\login.svg                         | XML                |          4 |          0 |          1 |          5 |
+| c:\Vito\dev-events\frontend\public\icons\logo.svg                          | XML                |         13 |          0 |          1 |         14 |
+| c:\Vito\dev-events\frontend\public\icons\menu.svg                          | XML                |          3 |          0 |          1 |          4 |
+| c:\Vito\dev-events\frontend\public\icons\message.svg                       | XML                |          4 |          0 |          1 |          5 |
+| c:\Vito\dev-events\frontend\public\icons\mobile.svg                        | XML                |          4 |          0 |          1 |          5 |
+| c:\Vito\dev-events\frontend\public\icons\notifaction.svg                   | XML                |          6 |          0 |          1 |          7 |
+| c:\Vito\dev-events\frontend\public\icons\people-red.svg                    | XML                |         11 |          0 |          1 |         12 |
+| c:\Vito\dev-events\frontend\public\icons\people.svg                        | XML                |          3 |          0 |          1 |          4 |
+| c:\Vito\dev-events\frontend\public\icons\play.svg                          | XML                |         10 |          0 |          1 |         11 |
+| c:\Vito\dev-events\frontend\public\icons\price.svg                         | XML                |          4 |          0 |          1 |          5 |
+| c:\Vito\dev-events\frontend\public\icons\primary-app-icon.svg              | XML                |          7 |          0 |          1 |          8 |
+| c:\Vito\dev-events\frontend\public\icons\save.svg                          | XML                |          5 |          0 |          1 |          6 |
+| c:\Vito\dev-events\frontend\public\icons\search-icon-searchbar.svg         | XML                |          3 |          0 |          1 |          4 |
+| c:\Vito\dev-events\frontend\public\icons\search.svg                        | XML                |          3 |          0 |          1 |          4 |
+| c:\Vito\dev-events\frontend\public\icons\share.svg                         | XML                |          3 |          0 |          1 |          4 |
+| c:\Vito\dev-events\frontend\public\icons\social\dribble.svg                | XML                |          5 |          0 |          1 |          6 |
+| c:\Vito\dev-events\frontend\public\icons\social\facebook.svg               | XML                |          3 |          0 |          1 |          4 |
+| c:\Vito\dev-events\frontend\public\icons\social\index.ts                   | TypeScript         |          8 |          0 |          1 |          9 |
+| c:\Vito\dev-events\frontend\public\icons\social\instagram-outline.svg      | XML                |          5 |          0 |          1 |          6 |
+| c:\Vito\dev-events\frontend\public\icons\social\instagram.svg              | XML                |          3 |          0 |          1 |          4 |
+| c:\Vito\dev-events\frontend\public\icons\social\linkedin.svg               | XML                |          3 |          0 |          1 |          4 |
+| c:\Vito\dev-events\frontend\public\icons\social\telegram.svg               | XML                |          3 |          0 |          1 |          4 |
+| c:\Vito\dev-events\frontend\public\icons\social\twitter.svg                | XML                |          3 |          0 |          1 |          4 |
+| c:\Vito\dev-events\frontend\public\icons\social\whatsapp.svg               | XML                |          4 |          0 |          1 |          5 |
+| c:\Vito\dev-events\frontend\public\icons\star-outline.svg                  | XML                |          3 |          0 |          1 |          4 |
+| c:\Vito\dev-events\frontend\public\icons\star.svg                          | XML                |         10 |          0 |          1 |         11 |
+| c:\Vito\dev-events\frontend\public\icons\support.svg                       | XML                |         10 |          0 |          1 |         11 |
+| c:\Vito\dev-events\frontend\public\icons\thin-email.svg                    | XML                |          4 |          0 |          1 |          5 |
+| c:\Vito\dev-events\frontend\public\icons\thin-location.svg                 | XML                |          4 |          0 |          1 |          5 |
+| c:\Vito\dev-events\frontend\public\icons\time.svg                          | XML                |          5 |          0 |          1 |          6 |
+| c:\Vito\dev-events\frontend\public\icons\timer.svg                         | XML                |          4 |          0 |          1 |          5 |
+| c:\Vito\dev-events\frontend\public\icons\zarinpaal.svg                     | XML                |          9 |          0 |          1 |         10 |
+| c:\Vito\dev-events\frontend\public\index.tsx                               | TypeScript JSX     |         16 |          0 |          1 |         17 |
+| c:\Vito\dev-events\frontend\public\logo.svg                                | XML                |          7 |          0 |          1 |          8 |
+| c:\Vito\dev-events\frontend\store\readme.md                                | Markdown           |          1 |          0 |          0 |          1 |
+| c:\Vito\dev-events\frontend\styles\globals.css                             | CSS                |        183 |          0 |         21 |        204 |
+| c:\Vito\dev-events\frontend\styles\index.tsx                               | TypeScript JSX     |          4 |          0 |          1 |          5 |
+| c:\Vito\dev-events\frontend\tailwind.config.js                             | JavaScript         |         20 |          1 |          1 |         22 |
+| c:\Vito\dev-events\frontend\tsconfig.json                                  | JSON with Comments |         25 |          0 |          1 |         26 |
+| c:\Vito\dev-events\frontend\types\event.ts                                 | TypeScript         |         32 |          0 |          2 |         34 |
+| c:\Vito\dev-events\frontend\types\index.ts                                 | TypeScript         |         15 |          0 |          3 |         18 |
+| Total                                                                      |                    |     10,149 |         20 |        549 |     10,718 |
++----------------------------------------------------------------------------+--------------------+------------+------------+------------+------------+

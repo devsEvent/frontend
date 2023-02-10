@@ -5,13 +5,14 @@ import React, { useEffect, useState } from "react";
 import useSWR from "swr";
 import ReactPaginate from "react-paginate";
 
-import Searchbar from "../../components/searchbar";
+import Searchbar from "../../components/events/searchbar";
 import Header from "../../components/elements/header";
+import Sidebar from "../../components/events/sidebar";
 import EventPreview from "../../components/eventPreview";
 import HeaderBox from "../../components/elements/headerBox";
-import EventPreviewLoading from "../../components/eventPreview/loading";
+import EventsLoading from "../../components/eventPreview/eventsLoading";
 
-import { Event } from "../../types";
+import { Event } from "../../types/event";
 
 const fetcher = (url: string) => fetch(url).then((res) => res.json());
 
@@ -27,24 +28,30 @@ type formDataType = {
 const DEFAULTFORMDATA: formDataType = {
   price: null,
   title: null,
+  basis: null,
   location: null,
 };
 
 function Page() {
-  const [selectedPage, setSelectedPage] = useState<number>(1);
-
+  // the count of events pagination
   const [countPage, setCountPage] = useState<number>(1);
 
-  const [formData, setFormData] = useState(DEFAULTFORMDATA);
+  const [selectedPage, setSelectedPage] = useState<number>(1);
 
-  const url = `http://localhost:5000/events/search?page=${selectedPage}&limit=10&lcoation=${formData.location}&price=${formData.price}&title=${formData.title}`;
+  // searchbarData object
+  const [searchbarData, setSearchbarData] = useState(DEFAULTFORMDATA);
 
+  const url = `http://localhost:5000/events/search?page=${selectedPage}&limit=10&lcoation=${searchbarData.location}&price=${searchbarData.price}&title=${searchbarData.title}`;
+
+  // get data using client side third-package
   const { data }: SWRType = useSWR(url, fetcher);
 
   useEffect(() => {
     if (data) {
+      // get the count events pagination page
       const { countAll }: { countAll: number } = data;
 
+      // for example to understand it better if countAll is 4 because it's lower that 10 it returns 1 and it countAll is 14 it will return 1.4 in which in react-paginate it define as 2
       setCountPage(countAll < 10 ? 1 : countAll / 10);
     }
   }, [data]);
@@ -56,24 +63,29 @@ function Page() {
   const searchHandler = (e: any) => {
     e.preventDefault();
 
+    // get location input value
     const location = e.target[1].value;
 
+    // get price input value
     const price = e.target[2].value;
 
+    // get basis input value
     const basis = e.target[3].value;
 
-    const newFromData = {
+    // then make new obkect
+    const newSearchbarData = {
       price: price,
       basis: basis,
       location: location,
       title: e.target[0].value,
     };
-    console.log(newFromData);
-    setFormData(newFromData);
+
+    // finally apply it to searchbarData state
+    setSearchbarData(newSearchbarData);
   };
 
   return (
-    <main className="mt-20 p-3 lg:p-9">
+    <main className="p-3 mt-20 lg:p-9">
       <header className="flex flex-col items-center">
         <HeaderBox>جستجو کنید</HeaderBox>
 
@@ -84,23 +96,25 @@ function Page() {
         <Searchbar searchHandler={searchHandler} />
       </header>
 
-      <div className="mt-6 w-full flex items-start flex-col-reverse lg:flex-row gap-y-4">
+      <div className="flex flex-col-reverse items-start w-full mt-6 lg:flex-row gap-y-4">
         <div className="w-full">
-          <section className="px-2 grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4 xl:gap-6 overflow-x-hidden w-full">
-            {data
-              ? data.result.map((item: Event, index: number) => (
-                  <EventPreview
-                    slug={item.slug}
-                    title={item.title}
-                    startDay={item.start_day}
-                    description={item.description}
-                    key={index}
-                  />
-                ))
-              : [...new Array(6)].map((item, index) => <EventPreviewLoading key={index} />)}
+          <section className="grid w-full grid-cols-1 gap-4 px-2 overflow-x-hidden lg:grid-cols-2 xl:grid-cols-3 xl:gap-6">
+            {data ? (
+              data.result.map((item: Event, index: number) => (
+                <EventPreview
+                  slug={item.slug}
+                  title={item.title}
+                  startDay={item.start_day}
+                  description={item.description}
+                  key={index}
+                />
+              ))
+            ) : (
+              <EventsLoading />
+            )}
           </section>
 
-          <div className="flex items-center justify-center lg:block h-20 overflow-x-hidden">
+          <div className="flex items-center justify-center h-20 overflow-x-hidden lg:block">
             <ReactPaginate
               pageCount={countPage}
               breakLabel="..."
@@ -128,12 +142,7 @@ function Page() {
           </div>
         </div>
 
-        <aside className="lg:sticky top-0 p-4 h-full w-full lg:w-[30%] flex flex-row lg:flex-col items-center gap-4 border-dim-grey border-2 rounded-2xl overflow-x-scroll lg:overflow-x-auto customize-scrollbar snap-x">
-          <div className="h-[10rem] shrink-0 snap-center w-[16rem] lg:w-full bg-primary-3 rounded-2xl" />
-          <div className="h-[10rem] shrink-0 snap-center w-[16rem] lg:w-full bg-primary-3 rounded-2xl" />
-          <div className="h-[10rem] shrink-0 snap-center w-[16rem] lg:w-full bg-primary-3 rounded-2xl" />
-          <div className="h-[10rem] shrink-0 snap-center w-[16rem] lg:w-full bg-primary-3 rounded-2xl" />
-        </aside>
+        <Sidebar />
       </div>
     </main>
   );

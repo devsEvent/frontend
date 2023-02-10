@@ -6,21 +6,22 @@ import React, { useState } from "react";
 
 import Header from "../../components/elements/header";
 import HeaderBox from "../../components/elements/headerBox";
-import PrimaryButton from "../../components/elements/primaryButton";
 import { AndAArrayContentType, QAndAArrayContent } from "./questions";
 
 import { AddIcon, ArrowOutlineIcon, SearchIcon } from "../../public/icons";
 
 function QAndA() {
+  // index of selected field
   const [selectedField, setSelectedField] = useState(0);
 
   const [expandedQuestionIndex, setExpandedQuestionIndex] = useState<null | number>(null);
 
+  // the array of fields title
   const QAndAArray: string[] = ["ساخت ایونت", "برگزاری ایونت", "ثبت نام", "برنامه نویس ها", "طراحان", "قوانین"];
 
   return (
-    <main className="mt-24 px-3 flex items-center flex-col">
-      <header className="flex items-center flex-col">
+    <main className="flex flex-col items-center px-3 mt-24">
+      <header className="flex flex-col items-center">
         <HeaderBox>سوالات متداول</HeaderBox>
 
         <Header>موضوع موردنظرتان را جستجو کرده یا از دسته‌بندی زیر انتخاب کنید</Header>
@@ -29,7 +30,7 @@ function QAndA() {
       <div className="mt-8 p-2 w-full lg:w-[35rem] flex items-center rounded-full border">
         <input
           type="text"
-          className="pr-2 w-full text-dark placeholder:text-dim-dark outline-none"
+          className="w-full pr-2 outline-none text-dark placeholder:text-dim-dark"
           placeholder="جستجوی موضوع"
         />
 
@@ -38,7 +39,7 @@ function QAndA() {
         </button>
       </div>
 
-      <div className="mt-10 w-full flex items-center justify-between lg:justify-center flex-wrap gap-4">
+      <div className="flex flex-wrap items-center justify-between w-full gap-4 mt-10 lg:justify-center">
         {QAndAArray.map((item: string, index: number) => (
           <button
             key={index}
@@ -69,7 +70,7 @@ function QAndA() {
             }`}
           >
             <button
-              className="h-8 w-full flex items-center justify-between font-medium"
+              className="flex items-center justify-between w-full h-8 font-medium"
               onClick={() => {
                 if (index === expandedQuestionIndex) {
                   setExpandedQuestionIndex(null);
@@ -87,14 +88,14 @@ function QAndA() {
               />
             </button>
 
-            <p className="mt-4 px-2 text-sm text-dark opacity-90 leading-9">{item.answer}</p>
+            <p className="px-2 mt-4 text-sm leading-9 text-dark opacity-90">{item.answer}</p>
           </div>
         ))}
       </div>
 
-      <PrimaryButton>
+      <button className="px-12 py-3 mt-16 text-white bg-primary rounded-2xl">
         <Link href="/contact">جواب سوال خود را پیدا نکرده ام</Link>
-      </PrimaryButton>
+      </button>
     </main>
   );
 }

@@ -1,0 +1,70 @@
+"filename", "language", "Markdown", "TypeScript JSX", "TypeScript", "comment", "blank", "total"
+"c:\Vito\dev-events\frontend\app\Q&A\page.tsx", "TypeScript JSX", 0, -1, 0, 2, 0, 1
+"c:\Vito\dev-events\frontend\app\about\page.tsx", "TypeScript JSX", 0, -87, 0, 0, -5, -92
+"c:\Vito\dev-events\frontend\app\contact\page.tsx", "TypeScript JSX", 0, 0, 0, 0, 11, 11
+"c:\Vito\dev-events\frontend\app\events\[eventSlug]\page.tsx", "TypeScript JSX", 0, 14, 0, 0, 1, 15
+"c:\Vito\dev-events\frontend\app\events\page.tsx", "TypeScript JSX", 0, -2, 0, 10, 1, 9
+"c:\Vito\dev-events\frontend\app\layout.tsx", "TypeScript JSX", 0, -35, 0, 0, -1, -36
+"c:\Vito\dev-events\frontend\components\about\person.tsx", "TypeScript JSX", 0, 29, 0, 0, 5, 34
+"c:\Vito\dev-events\frontend\components\banner\index.tsx", "TypeScript JSX", 0, -27, 0, 0, -8, -35
+"c:\Vito\dev-events\frontend\components\banner\language.tsx", "TypeScript JSX", 0, -26, 0, 0, -4, -30
+"c:\Vito\dev-events\frontend\components\comment\index.tsx", "TypeScript JSX", 0, -46, 0, 0, -9, -55
+"c:\Vito\dev-events\frontend\components\elements\primaryButton.tsx", "TypeScript JSX", 0, -5, 0, 0, -3, -8
+"c:\Vito\dev-events\frontend\components\emailSettler\index.tsx", "TypeScript JSX", 0, -28, 0, 0, -7, -35
+"c:\Vito\dev-events\frontend\components\eventPreview\eventsLoading.tsx", "TypeScript JSX", 0, 12, 0, 0, 4, 16
+"c:\Vito\dev-events\frontend\components\events\searchbar\index.tsx", "TypeScript JSX", 0, 56, 0, 0, 13, 69
+"c:\Vito\dev-events\frontend\components\events\searchbar\inputOptions.ts", "TypeScript", 0, 0, 97, 0, 3, 100
+"c:\Vito\dev-events\frontend\components\events\searchbar\selectInput.tsx", "TypeScript JSX", 0, 14, 0, 0, 4, 18
+"c:\Vito\dev-events\frontend\components\events\sidebar.tsx", "TypeScript JSX", 0, 12, 0, 0, 3, 15
+"c:\Vito\dev-events\frontend\components\footer\footerLink.tsx", "TypeScript JSX", 0, -10, 0, 0, -3, -13
+"c:\Vito\dev-events\frontend\components\footer\index.tsx", "TypeScript JSX", 0, -105, 0, 0, -16, -121
+"c:\Vito\dev-events\frontend\components\header\index.tsx", "TypeScript JSX", 0, -111, 0, 0, -11, -122
+"c:\Vito\dev-events\frontend\components\homeEventsSections\allEventsSection.tsx", "TypeScript JSX", 0, -30, 0, 0, -9, -39
+"c:\Vito\dev-events\frontend\components\homeEventsSections\bestEventsSection.tsx", "TypeScript JSX", 0, -30, 0, 0, -9, -39
+"c:\Vito\dev-events\frontend\components\home\bestEvents.tsx", "TypeScript JSX", 0, 35, 0, 0, 9, 44
+"c:\Vito\dev-events\frontend\components\home\comments\Slide.tsx", "TypeScript JSX", 0, 32, 0, 0, 11, 43
+"c:\Vito\dev-events\frontend\components\home\comments\index.tsx", "TypeScript JSX", 0, 43, 0, 0, 8, 51
+"c:\Vito\dev-events\frontend\components\home\comments\slider.tsx", "TypeScript JSX", 0, 19, 0, 0, 4, 23
+"c:\Vito\dev-events\frontend\components\home\emailSettler.tsx", "TypeScript JSX", 0, 28, 0, 0, 7, 35
+"c:\Vito\dev-events\frontend\components\home\header\index.tsx", "TypeScript JSX", 0, 44, 0, 0, 7, 51
+"c:\Vito\dev-events\frontend\components\home\header\slide.tsx", "TypeScript JSX", 0, 43, 0, 0, 8, 51
+"c:\Vito\dev-events\frontend\components\home\header\slider.tsx", "TypeScript JSX", 0, 34, 0, 0, 6, 40
+"c:\Vito\dev-events\frontend\components\home\latestEvents.tsx", "TypeScript JSX", 0, 35, 0, 0, 9, 44
+"c:\Vito\dev-events\frontend\components\home\signUp\button.tsx", "TypeScript JSX", 0, 21, 0, 0, 5, 26
+"c:\Vito\dev-events\frontend\components\home\signUp\confirmCode.tsx", "TypeScript JSX", 0, 5, 0, 0, 3, 8
+"c:\Vito\dev-events\frontend\components\home\signUp\createAccount.tsx", "TypeScript JSX", 0, 30, 0, 0, 11, 41
+"c:\Vito\dev-events\frontend\components\home\signUp\createEvent.tsx", "TypeScript JSX", 0, 5, 0, 0, 3, 8
+"c:\Vito\dev-events\frontend\components\home\signUp\holdingEvent.tsx", "TypeScript JSX", 0, 5, 0, 0, 3, 8
+"c:\Vito\dev-events\frontend\components\home\signUp\index.tsx", "TypeScript JSX", 0, 55, 0, 0, 11, 66
+"c:\Vito\dev-events\frontend\components\layout\banner\index.tsx", "TypeScript JSX", 0, 27, 0, 0, 8, 35
+"c:\Vito\dev-events\frontend\components\layout\banner\language.tsx", "TypeScript JSX", 0, 26, 0, 0, 4, 30
+"c:\Vito\dev-events\frontend\components\layout\footer\footerLink.tsx", "TypeScript JSX", 0, 10, 0, 0, 3, 13
+"c:\Vito\dev-events\frontend\components\layout\footer\index.tsx", "TypeScript JSX", 0, 105, 0, 0, 16, 121
+"c:\Vito\dev-events\frontend\components\layout\navbar\index.tsx", "TypeScript JSX", 0, 97, 0, 6, 21, 124
+"c:\Vito\dev-events\frontend\components\layout\navbar\navLink.tsx", "TypeScript JSX", 0, 23, 0, 0, 4, 27
+"c:\Vito\dev-events\frontend\components\navbar\index.tsx", "TypeScript JSX", 0, -97, 0, -6, -21, -124
+"c:\Vito\dev-events\frontend\components\navbar\navLink.tsx", "TypeScript JSX", 0, -23, 0, 0, -4, -27
+"c:\Vito\dev-events\frontend\components\searchbar\index.tsx", "TypeScript JSX", 0, -102, 0, 0, -14, -116
+"c:\Vito\dev-events\frontend\components\signUpHome\button.tsx", "TypeScript JSX", 0, -21, 0, 0, -5, -26
+"c:\Vito\dev-events\frontend\components\signUpHome\confirmCode.tsx", "TypeScript JSX", 0, -5, 0, 0, -3, -8
+"c:\Vito\dev-events\frontend\components\signUpHome\createAccount.tsx", "TypeScript JSX", 0, -30, 0, 0, -11, -41
+"c:\Vito\dev-events\frontend\components\signUpHome\createEvent.tsx", "TypeScript JSX", 0, -5, 0, 0, -3, -8
+"c:\Vito\dev-events\frontend\components\signUpHome\holdingEvent.tsx", "TypeScript JSX", 0, -5, 0, 0, -3, -8
+"c:\Vito\dev-events\frontend\components\signUpHome\index.tsx", "TypeScript JSX", 0, -55, 0, 0, -11, -66
+"c:\Vito\dev-events\frontend\components\singleEvent\comment\index.tsx", "TypeScript JSX", 0, 46, 0, 0, 9, 55
+"c:\Vito\dev-events\frontend\components\singleEvent\detail.tsx", "TypeScript JSX", 0, -13, 0, 0, -4, -17
+"c:\Vito\dev-events\frontend\components\singleEvent\details.tsx", "TypeScript JSX", 0, -105, 0, 0, -17, -122
+"c:\Vito\dev-events\frontend\components\singleEvent\details\detail.tsx", "TypeScript JSX", 0, 13, 0, 0, 4, 17
+"c:\Vito\dev-events\frontend\components\singleEvent\details\details.tsx", "TypeScript JSX", 0, 105, 0, 0, 17, 122
+"c:\Vito\dev-events\frontend\components\singleEvent\relatedEventsSlider.tsx", "TypeScript JSX", 0, 69, 0, 0, 12, 81
+"c:\Vito\dev-events\frontend\components\singleEvent\slider.tsx", "TypeScript JSX", 0, -80, 0, 0, -13, -93
+"c:\Vito\dev-events\frontend\components\userComments\index.tsx", "TypeScript JSX", 0, -53, 0, 0, -12, -65
+"c:\Vito\dev-events\frontend\modules\IranProvinces.ts", "TypeScript", 0, 0, -29, 0, -1, -30
+"c:\Vito\dev-events\frontend\modules\getEvents.tsx", "TypeScript JSX", 0, 4, 0, 0, 0, 4
+"c:\Vito\dev-events\frontend\pages\404.tsx", "TypeScript JSX", 0, -35, 0, 0, 2, -33
+"c:\Vito\dev-events\frontend\public\fonts\index.ts", "TypeScript", 0, 0, 36, 0, 2, 38
+"c:\Vito\dev-events\frontend\store\readme.md", "Markdown", 1, 0, 0, 0, 0, 1
+"c:\Vito\dev-events\frontend\types.ts", "TypeScript", 0, 0, -33, 0, -3, -36
+"c:\Vito\dev-events\frontend\types\event.ts", "TypeScript", 0, 0, 32, 0, 2, 34
+"c:\Vito\dev-events\frontend\types\index.ts", "TypeScript", 0, 0, 15, 0, 3, 18
+"Total", "-", 1, -76, 118, 12, 47, 102

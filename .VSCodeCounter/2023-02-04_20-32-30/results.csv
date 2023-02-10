@@ -1,0 +1,116 @@
+"filename", "language", "JSON", "TypeScript", "JSON with Comments", "JavaScript", "TypeScript JSX", "CSS", "Markdown", "XML", "comment", "blank", "total"
+"c:\Vito\dev-events\frontend\.eslintrc.json", "JSON with Comments", 0, 0, 3, 0, 0, 0, 0, 0, 0, 1, 4
+"c:\Vito\dev-events\frontend\README.md", "Markdown", 0, 0, 0, 0, 0, 0, 79, 0, 0, 31, 110
+"c:\Vito\dev-events\frontend\app\Q&A\head.tsx", "TypeScript JSX", 0, 0, 0, 0, 9, 0, 0, 0, 0, 1, 10
+"c:\Vito\dev-events\frontend\app\Q&A\page.tsx", "TypeScript JSX", 0, 0, 0, 0, 86, 0, 0, 0, 0, 17, 103
+"c:\Vito\dev-events\frontend\app\Q&A\questions.ts", "TypeScript", 0, 168, 0, 0, 0, 0, 0, 0, 0, 2, 170
+"c:\Vito\dev-events\frontend\app\about\head.tsx", "TypeScript JSX", 0, 0, 0, 0, 9, 0, 0, 0, 0, 1, 10
+"c:\Vito\dev-events\frontend\app\about\page.tsx", "TypeScript JSX", 0, 0, 0, 0, 173, 0, 0, 0, 0, 16, 189
+"c:\Vito\dev-events\frontend\app\contact\head.tsx", "TypeScript JSX", 0, 0, 0, 0, 9, 0, 0, 0, 0, 1, 10
+"c:\Vito\dev-events\frontend\app\contact\page.tsx", "TypeScript JSX", 0, 0, 0, 0, 80, 0, 0, 0, 0, 9, 89
+"c:\Vito\dev-events\frontend\app\events\[eventSlug]\head.tsx", "TypeScript JSX", 0, 0, 0, 0, 8, 0, 0, 0, 0, 1, 9
+"c:\Vito\dev-events\frontend\app\events\[eventSlug]\page.tsx", "TypeScript JSX", 0, 0, 0, 0, 92, 0, 0, 0, 0, 23, 115
+"c:\Vito\dev-events\frontend\app\events\head.tsx", "TypeScript JSX", 0, 0, 0, 0, 9, 0, 0, 0, 0, 1, 10
+"c:\Vito\dev-events\frontend\app\events\page.tsx", "TypeScript JSX", 0, 0, 0, 0, 114, 0, 0, 0, 0, 29, 143
+"c:\Vito\dev-events\frontend\app\head.tsx", "TypeScript JSX", 0, 0, 0, 0, 9, 0, 0, 0, 0, 1, 10
+"c:\Vito\dev-events\frontend\app\layout.tsx", "TypeScript JSX", 0, 0, 0, 0, 55, 0, 0, 0, 0, 8, 63
+"c:\Vito\dev-events\frontend\app\page.tsx", "TypeScript JSX", 0, 0, 0, 0, 23, 0, 0, 0, 0, 12, 35
+"c:\Vito\dev-events\frontend\components\banner\index.tsx", "TypeScript JSX", 0, 0, 0, 0, 27, 0, 0, 0, 0, 8, 35
+"c:\Vito\dev-events\frontend\components\banner\language.tsx", "TypeScript JSX", 0, 0, 0, 0, 26, 0, 0, 0, 0, 4, 30
+"c:\Vito\dev-events\frontend\components\comment\index.tsx", "TypeScript JSX", 0, 0, 0, 0, 46, 0, 0, 0, 0, 9, 55
+"c:\Vito\dev-events\frontend\components\elements\header.tsx", "TypeScript JSX", 0, 0, 0, 0, 5, 0, 0, 0, 0, 3, 8
+"c:\Vito\dev-events\frontend\components\elements\headerBox.tsx", "TypeScript JSX", 0, 0, 0, 0, 5, 0, 0, 0, 0, 3, 8
+"c:\Vito\dev-events\frontend\components\elements\primaryButton.tsx", "TypeScript JSX", 0, 0, 0, 0, 5, 0, 0, 0, 0, 3, 8
+"c:\Vito\dev-events\frontend\components\emailSettler\index.tsx", "TypeScript JSX", 0, 0, 0, 0, 28, 0, 0, 0, 0, 7, 35
+"c:\Vito\dev-events\frontend\components\eventPreview\index.tsx", "TypeScript JSX", 0, 0, 0, 0, 32, 0, 0, 0, 0, 9, 41
+"c:\Vito\dev-events\frontend\components\eventPreview\loading.tsx", "TypeScript JSX", 0, 0, 0, 0, 14, 0, 0, 0, 0, 5, 19
+"c:\Vito\dev-events\frontend\components\footer\footerLink.tsx", "TypeScript JSX", 0, 0, 0, 0, 10, 0, 0, 0, 0, 3, 13
+"c:\Vito\dev-events\frontend\components\footer\index.tsx", "TypeScript JSX", 0, 0, 0, 0, 105, 0, 0, 0, 0, 16, 121
+"c:\Vito\dev-events\frontend\components\header\index.tsx", "TypeScript JSX", 0, 0, 0, 0, 111, 0, 0, 0, 0, 11, 122
+"c:\Vito\dev-events\frontend\components\homeEventsSections\allEventsSection.tsx", "TypeScript JSX", 0, 0, 0, 0, 30, 0, 0, 0, 0, 9, 39
+"c:\Vito\dev-events\frontend\components\homeEventsSections\bestEventsSection.tsx", "TypeScript JSX", 0, 0, 0, 0, 30, 0, 0, 0, 0, 9, 39
+"c:\Vito\dev-events\frontend\components\navbar\index.tsx", "TypeScript JSX", 0, 0, 0, 0, 97, 0, 0, 0, 6, 21, 124
+"c:\Vito\dev-events\frontend\components\navbar\navLink.tsx", "TypeScript JSX", 0, 0, 0, 0, 23, 0, 0, 0, 0, 4, 27
+"c:\Vito\dev-events\frontend\components\searchbar\index.tsx", "TypeScript JSX", 0, 0, 0, 0, 102, 0, 0, 0, 0, 14, 116
+"c:\Vito\dev-events\frontend\components\signUpHome\button.tsx", "TypeScript JSX", 0, 0, 0, 0, 21, 0, 0, 0, 0, 5, 26
+"c:\Vito\dev-events\frontend\components\signUpHome\confirmCode.tsx", "TypeScript JSX", 0, 0, 0, 0, 5, 0, 0, 0, 0, 3, 8
+"c:\Vito\dev-events\frontend\components\signUpHome\createAccount.tsx", "TypeScript JSX", 0, 0, 0, 0, 30, 0, 0, 0, 0, 11, 41
+"c:\Vito\dev-events\frontend\components\signUpHome\createEvent.tsx", "TypeScript JSX", 0, 0, 0, 0, 5, 0, 0, 0, 0, 3, 8
+"c:\Vito\dev-events\frontend\components\signUpHome\holdingEvent.tsx", "TypeScript JSX", 0, 0, 0, 0, 5, 0, 0, 0, 0, 3, 8
+"c:\Vito\dev-events\frontend\components\signUpHome\index.tsx", "TypeScript JSX", 0, 0, 0, 0, 55, 0, 0, 0, 0, 11, 66
+"c:\Vito\dev-events\frontend\components\singleEvent\ads.tsx", "TypeScript JSX", 0, 0, 0, 0, 20, 0, 0, 0, 0, 5, 25
+"c:\Vito\dev-events\frontend\components\singleEvent\controlers.tsx", "TypeScript JSX", 0, 0, 0, 0, 25, 0, 0, 0, 0, 5, 30
+"c:\Vito\dev-events\frontend\components\singleEvent\detail.tsx", "TypeScript JSX", 0, 0, 0, 0, 13, 0, 0, 0, 0, 4, 17
+"c:\Vito\dev-events\frontend\components\singleEvent\details.tsx", "TypeScript JSX", 0, 0, 0, 0, 105, 0, 0, 0, 0, 17, 122
+"c:\Vito\dev-events\frontend\components\singleEvent\headerSlider.tsx", "TypeScript JSX", 0, 0, 0, 0, 26, 0, 0, 0, 0, 7, 33
+"c:\Vito\dev-events\frontend\components\singleEvent\newComment.tsx", "TypeScript JSX", 0, 0, 0, 0, 15, 0, 0, 0, 0, 4, 19
+"c:\Vito\dev-events\frontend\components\singleEvent\sidebar.tsx", "TypeScript JSX", 0, 0, 0, 0, 34, 0, 0, 0, 0, 10, 44
+"c:\Vito\dev-events\frontend\components\singleEvent\slider.tsx", "TypeScript JSX", 0, 0, 0, 0, 80, 0, 0, 0, 0, 13, 93
+"c:\Vito\dev-events\frontend\components\userComments\index.tsx", "TypeScript JSX", 0, 0, 0, 0, 53, 0, 0, 0, 0, 12, 65
+"c:\Vito\dev-events\frontend\logo.svg", "XML", 0, 0, 0, 0, 0, 0, 0, 7, 0, 1, 8
+"c:\Vito\dev-events\frontend\modules\IranProvinces.ts", "TypeScript", 0, 29, 0, 0, 0, 0, 0, 0, 0, 1, 30
+"c:\Vito\dev-events\frontend\modules\getEvents.tsx", "TypeScript JSX", 0, 0, 0, 0, 8, 0, 0, 0, 0, 4, 12
+"c:\Vito\dev-events\frontend\next.config.js", "JavaScript", 0, 0, 0, 6, 0, 0, 0, 0, 1, 2, 9
+"c:\Vito\dev-events\frontend\package-lock.json", "JSON", 6994, 0, 0, 0, 0, 0, 0, 0, 0, 1, 6995
+"c:\Vito\dev-events\frontend\package.json", "JSON", 32, 0, 0, 0, 0, 0, 0, 0, 0, 1, 33
+"c:\Vito\dev-events\frontend\pages\404.tsx", "TypeScript JSX", 0, 0, 0, 0, 76, 0, 0, 0, 0, 6, 82
+"c:\Vito\dev-events\frontend\postcss.config.js", "JavaScript", 0, 0, 0, 6, 0, 0, 0, 0, 0, 1, 7
+"c:\Vito\dev-events\frontend\public\404-background.svg", "XML", 0, 0, 0, 0, 0, 0, 0, 27, 0, 1, 28
+"c:\Vito\dev-events\frontend\public\comments-background.svg", "XML", 0, 0, 0, 0, 0, 0, 0, 13, 0, 1, 14
+"c:\Vito\dev-events\frontend\public\create-account-homepage.svg", "XML", 0, 0, 0, 0, 0, 0, 0, 74, 0, 1, 75
+"c:\Vito\dev-events\frontend\public\email-settler-backgorund.svg", "XML", 0, 0, 0, 0, 0, 0, 0, 28, 0, 1, 29
+"c:\Vito\dev-events\frontend\public\email-settler-image.svg", "XML", 0, 0, 0, 0, 0, 0, 0, 128, 0, 1, 129
+"c:\Vito\dev-events\frontend\public\footer-background.svg", "XML", 0, 0, 0, 0, 0, 0, 0, 13, 0, 1, 14
+"c:\Vito\dev-events\frontend\public\icons\add.svg", "XML", 0, 0, 0, 0, 0, 0, 0, 3, 0, 1, 4
+"c:\Vito\dev-events\frontend\public\icons\arrow-left.svg", "XML", 0, 0, 0, 0, 0, 0, 0, 3, 0, 1, 4
+"c:\Vito\dev-events\frontend\public\icons\arrow-outline.svg", "XML", 0, 0, 0, 0, 0, 0, 0, 3, 0, 1, 4
+"c:\Vito\dev-events\frontend\public\icons\arrow-up.svg", "XML", 0, 0, 0, 0, 0, 0, 0, 4, 0, 1, 5
+"c:\Vito\dev-events\frontend\public\icons\calendar-gray.svg", "XML", 0, 0, 0, 0, 0, 0, 0, 4, 0, 1, 5
+"c:\Vito\dev-events\frontend\public\icons\calendar-white.svg", "XML", 0, 0, 0, 0, 0, 0, 0, 4, 0, 1, 5
+"c:\Vito\dev-events\frontend\public\icons\calendar.svg", "XML", 0, 0, 0, 0, 0, 0, 0, 14, 0, 1, 15
+"c:\Vito\dev-events\frontend\public\icons\dollars.svg", "XML", 0, 0, 0, 0, 0, 0, 0, 4, 0, 1, 5
+"c:\Vito\dev-events\frontend\public\icons\eenamad.svg", "XML", 0, 0, 0, 0, 0, 0, 0, 9, 0, 1, 10
+"c:\Vito\dev-events\frontend\public\icons\food.svg", "XML", 0, 0, 0, 0, 0, 0, 0, 3, 0, 1, 4
+"c:\Vito\dev-events\frontend\public\icons\index.tsx", "TypeScript JSX", 0, 0, 0, 0, 35, 0, 0, 0, 0, 1, 36
+"c:\Vito\dev-events\frontend\public\icons\location-white.svg", "XML", 0, 0, 0, 0, 0, 0, 0, 4, 0, 1, 5
+"c:\Vito\dev-events\frontend\public\icons\location.svg", "XML", 0, 0, 0, 0, 0, 0, 0, 4, 0, 1, 5
+"c:\Vito\dev-events\frontend\public\icons\login.svg", "XML", 0, 0, 0, 0, 0, 0, 0, 4, 0, 1, 5
+"c:\Vito\dev-events\frontend\public\icons\logo.svg", "XML", 0, 0, 0, 0, 0, 0, 0, 13, 0, 1, 14
+"c:\Vito\dev-events\frontend\public\icons\menu.svg", "XML", 0, 0, 0, 0, 0, 0, 0, 3, 0, 1, 4
+"c:\Vito\dev-events\frontend\public\icons\message.svg", "XML", 0, 0, 0, 0, 0, 0, 0, 4, 0, 1, 5
+"c:\Vito\dev-events\frontend\public\icons\mobile.svg", "XML", 0, 0, 0, 0, 0, 0, 0, 4, 0, 1, 5
+"c:\Vito\dev-events\frontend\public\icons\notifaction.svg", "XML", 0, 0, 0, 0, 0, 0, 0, 6, 0, 1, 7
+"c:\Vito\dev-events\frontend\public\icons\people-red.svg", "XML", 0, 0, 0, 0, 0, 0, 0, 11, 0, 1, 12
+"c:\Vito\dev-events\frontend\public\icons\people.svg", "XML", 0, 0, 0, 0, 0, 0, 0, 3, 0, 1, 4
+"c:\Vito\dev-events\frontend\public\icons\play.svg", "XML", 0, 0, 0, 0, 0, 0, 0, 10, 0, 1, 11
+"c:\Vito\dev-events\frontend\public\icons\price.svg", "XML", 0, 0, 0, 0, 0, 0, 0, 4, 0, 1, 5
+"c:\Vito\dev-events\frontend\public\icons\primary-app-icon.svg", "XML", 0, 0, 0, 0, 0, 0, 0, 7, 0, 1, 8
+"c:\Vito\dev-events\frontend\public\icons\save.svg", "XML", 0, 0, 0, 0, 0, 0, 0, 5, 0, 1, 6
+"c:\Vito\dev-events\frontend\public\icons\search-icon-searchbar.svg", "XML", 0, 0, 0, 0, 0, 0, 0, 3, 0, 1, 4
+"c:\Vito\dev-events\frontend\public\icons\search.svg", "XML", 0, 0, 0, 0, 0, 0, 0, 3, 0, 1, 4
+"c:\Vito\dev-events\frontend\public\icons\share.svg", "XML", 0, 0, 0, 0, 0, 0, 0, 3, 0, 1, 4
+"c:\Vito\dev-events\frontend\public\icons\social\dribble.svg", "XML", 0, 0, 0, 0, 0, 0, 0, 5, 0, 1, 6
+"c:\Vito\dev-events\frontend\public\icons\social\facebook.svg", "XML", 0, 0, 0, 0, 0, 0, 0, 3, 0, 1, 4
+"c:\Vito\dev-events\frontend\public\icons\social\index.ts", "TypeScript", 0, 8, 0, 0, 0, 0, 0, 0, 0, 1, 9
+"c:\Vito\dev-events\frontend\public\icons\social\instagram-outline.svg", "XML", 0, 0, 0, 0, 0, 0, 0, 5, 0, 1, 6
+"c:\Vito\dev-events\frontend\public\icons\social\instagram.svg", "XML", 0, 0, 0, 0, 0, 0, 0, 3, 0, 1, 4
+"c:\Vito\dev-events\frontend\public\icons\social\linkedin.svg", "XML", 0, 0, 0, 0, 0, 0, 0, 3, 0, 1, 4
+"c:\Vito\dev-events\frontend\public\icons\social\telegram.svg", "XML", 0, 0, 0, 0, 0, 0, 0, 3, 0, 1, 4
+"c:\Vito\dev-events\frontend\public\icons\social\twitter.svg", "XML", 0, 0, 0, 0, 0, 0, 0, 3, 0, 1, 4
+"c:\Vito\dev-events\frontend\public\icons\social\whatsapp.svg", "XML", 0, 0, 0, 0, 0, 0, 0, 4, 0, 1, 5
+"c:\Vito\dev-events\frontend\public\icons\star-outline.svg", "XML", 0, 0, 0, 0, 0, 0, 0, 3, 0, 1, 4
+"c:\Vito\dev-events\frontend\public\icons\star.svg", "XML", 0, 0, 0, 0, 0, 0, 0, 10, 0, 1, 11
+"c:\Vito\dev-events\frontend\public\icons\support.svg", "XML", 0, 0, 0, 0, 0, 0, 0, 10, 0, 1, 11
+"c:\Vito\dev-events\frontend\public\icons\thin-email.svg", "XML", 0, 0, 0, 0, 0, 0, 0, 4, 0, 1, 5
+"c:\Vito\dev-events\frontend\public\icons\thin-location.svg", "XML", 0, 0, 0, 0, 0, 0, 0, 4, 0, 1, 5
+"c:\Vito\dev-events\frontend\public\icons\time.svg", "XML", 0, 0, 0, 0, 0, 0, 0, 5, 0, 1, 6
+"c:\Vito\dev-events\frontend\public\icons\timer.svg", "XML", 0, 0, 0, 0, 0, 0, 0, 4, 0, 1, 5
+"c:\Vito\dev-events\frontend\public\icons\zarinpaal.svg", "XML", 0, 0, 0, 0, 0, 0, 0, 9, 0, 1, 10
+"c:\Vito\dev-events\frontend\public\index.tsx", "TypeScript JSX", 0, 0, 0, 0, 16, 0, 0, 0, 0, 1, 17
+"c:\Vito\dev-events\frontend\public\logo.svg", "XML", 0, 0, 0, 0, 0, 0, 0, 7, 0, 1, 8
+"c:\Vito\dev-events\frontend\styles\globals.css", "CSS", 0, 0, 0, 0, 0, 183, 0, 0, 0, 21, 204
+"c:\Vito\dev-events\frontend\styles\index.tsx", "TypeScript JSX", 0, 0, 0, 0, 4, 0, 0, 0, 0, 1, 5
+"c:\Vito\dev-events\frontend\tailwind.config.js", "JavaScript", 0, 0, 0, 20, 0, 0, 0, 0, 1, 1, 22
+"c:\Vito\dev-events\frontend\tsconfig.json", "JSON with Comments", 0, 0, 25, 0, 0, 0, 0, 0, 0, 1, 26
+"c:\Vito\dev-events\frontend\types.ts", "TypeScript", 0, 33, 0, 0, 0, 0, 0, 0, 0, 3, 36
+"Total", "-", 7026, 238, 28, 32, 2003, 183, 79, 517, 8, 502, 10616
