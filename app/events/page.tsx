@@ -63,6 +63,11 @@ function Page() {
   const searchHandler = (e: any) => {
     e.preventDefault();
 
+    // get title input
+    const titleInput = e.target[0].value;
+
+    const title = typeof titleInput === "string" ? titleInput : null;
+
     // get location input value
     const location = e.target[1].value;
 
@@ -77,7 +82,7 @@ function Page() {
       price: price,
       basis: basis,
       location: location,
-      title: e.target[0].value,
+      title: title,
     };
 
     // finally apply it to searchbarData state
