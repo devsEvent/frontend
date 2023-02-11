@@ -3,7 +3,7 @@
 import React from "react";
 import Image from "next/image";
 
-import FooterLink from "./footerLink";
+import FooterLink from "./link";
 
 import { ArrowUpIcon, EenamadIcon, PrimaryAppIcon, ZarinpaalIcon } from "../../../public/icons";
 import { FacebookIcon, InstagramIcon, LinkedInIcon, TwitterIcon } from "../../../public/icons/social";

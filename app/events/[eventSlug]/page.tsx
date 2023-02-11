@@ -1,23 +1,20 @@
 import React from "react";
 
-import Comment from "../../../components/singleEvent/comment";
 import ADS from "../../../components/singleEvent/ads";
 import Header from "../../../components/elements/header";
-import EventPreview from "../../../components/eventPreview";
 import Sidebar from "../../../components/singleEvent/sidebar";
+import Comment from "../../../components/singleEvent/comment";
 import HeaderBox from "../../../components/elements/headerBox";
 import NewComment from "../../../components/singleEvent/newComment";
 import Details from "../../../components/singleEvent/details/details";
-import SingleEventSlider from "../../../components/singleEvent/relatedEventsSlider";
 
 import { getEvents } from "../../../modules/getEvents";
-
-import { SwiperSlide } from "swiper/react";
 
 import { Event } from "../../../types/event";
 import { singleEventProps } from "../../../types";
 
 import { SampleAvatar } from "../../../public";
+import RelatedEvents from "../../../components/singleEvent/relatedEvents";
 
 async function SingleEvent({ params }: singleEventProps) {
   const relatedEvents = await getEvents(`${process.env.SERVER_URL}/events?page=1&limit=12&slug=${params.eventSlug}`);
@@ -55,7 +52,7 @@ async function SingleEvent({ params }: singleEventProps) {
 
       <ADS />
 
-      <section className="w-full p-4 lg:p-9" id="comments">
+      {/* <section className="w-full p-4 lg:p-9" id="comments">
         <Header>نظرات شرکت کنندگان</Header>
 
         <NewComment />
@@ -90,7 +87,7 @@ async function SingleEvent({ params }: singleEventProps) {
 
           <button className="w-full py-2 mt-6 text-white md:w-fit md:py-3 px-14 bg-primary rounded-xl">بیشتر</button>
         </div>
-      </section>
+      </section> */}
 
       <section className="flex flex-col items-center w-full mt-10">
         <header className="flex flex-col items-center">
@@ -99,18 +96,7 @@ async function SingleEvent({ params }: singleEventProps) {
           <Header>برترین دورهمی ها و ایونت ها</Header>
         </header>
 
-        <SingleEventSlider>
-          {relatedEvents.map((item: Event, index: number) => (
-            <SwiperSlide className="flex items-center justify-center w-full" key={index}>
-              <EventPreview
-                slug={item.slug}
-                title={item.title}
-                startDay={item.start_day}
-                description={item.description}
-              />
-            </SwiperSlide>
-          ))}
-        </SingleEventSlider>
+        <RelatedEvents relatedEvents={relatedEvents} />
       </section>
     </main>
   );
