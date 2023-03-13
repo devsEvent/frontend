@@ -87,7 +87,9 @@ function Navbar() {
         <Image src={MenuIcon} alt="" />
       </button>
 
-      <Image src={PrimaryAppIcon} alt="devs event logo" className="w-12 lg:w-14" />
+      <Link href="/">
+        <Image src={PrimaryAppIcon} alt="devs event logo" className="w-12 lg:w-14" />
+      </Link>
 
       <ul className="items-center hidden h-full lg:flex gap-x-8">
         {links.map((item) => (

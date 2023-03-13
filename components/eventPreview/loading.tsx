@@ -2,7 +2,7 @@ import React from "react";
 
 function EventPreviewLoading() {
   return (
-    <div className="px-3 py-4 relative block w-full max-w-[20rem] lg:w-[20rem] bg-secondary rounded-2xl shadow-sm">
+    <div className="px-3 py-4 relative block w-[85vw] max-w-[20rem] lg:w-[20rem] bg-secondary rounded-2xl shadow-sm">
       <div className="w-full h-[15rem] rounded-2xl shadow-sm loading" />
 
       <div className="mt-4 w-[75%] h-[1rem] loading" />
