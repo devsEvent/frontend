@@ -36,12 +36,9 @@
 🛣️ Roadmap
 </h2>
 
-- [x] add about page
 - [ ] Add online rooms
-- [ ] Additional browser support
+- [ ] add user profile
 - [ ] Add blog
-    - [ ] Farsi
-    - [ ] English
 
 See the open [issues](https://github.com/devsEvent/frontend/issues) for a full list of proposed features (and known issues).
 
